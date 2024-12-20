@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Tutorial/Project2-SolarSystem" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">XRCC Tutorial - Solar System | XRCC Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://votanic.github.io/XRCC_Tutorial/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://votanic.github.io/XRCC_Tutorial/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project2-SolarSystem"><meta data-rh="true" property="og:locale" content="en_GB"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="XRCC Tutorial - Solar System | XRCC Documentation"><meta data-rh="true" name="description" content="You will build a simulated Solar System using XRCC in this tutorial."><meta data-rh="true" property="og:description" content="You will build a simulated Solar System using XRCC in this tutorial."><link data-rh="true" rel="icon" href="/XRCC_Tutorial/img/XRCCMiniLogo.png"><link data-rh="true" rel="canonical" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project2-SolarSystem"><link data-rh="true" rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project2-SolarSystem" hreflang="en-GB"><link data-rh="true" rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project2-SolarSystem" hreflang="x-default"><link rel="stylesheet" href="/XRCC_Tutorial/assets/css/styles.228a1ad9.css">
+<script src="/XRCC_Tutorial/assets/js/runtime~main.99d59701.js" defer="defer"></script>
+<script src="/XRCC_Tutorial/assets/js/main.68a181bb.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/XRCC_Tutorial/"><div class="navbar__logo"><img src="/XRCC_Tutorial/img/Icon/XRCCLogoLight.svg" alt="Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/XRCC_Tutorial/img/Icon/XRCCLogoDark.svg" alt="Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/GeneralGuide/Overview/">General Guide</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/PCMode/Introduction/">PC Mode</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/XRMode/Introduction/">XR Mode</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/BehaviourOverview/Introduction">Behaviour Overview</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/XRCC_Tutorial/Tutorial/Introduction">Tutorial</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/FAQ/">FAQ</a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input"><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="navbar__item header-separater"> </div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Introduction">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Project1-Museum">Project 1 - Museum</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/XRCC_Tutorial/Tutorial/Project2-SolarSystem">Project 2 - Solar System</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/XRCC_Tutorial/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Project 2 - Solar System</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>XRCC Tutorial - Solar System</h1></header>
+<h1>Overview</h1>
+<p>You will build a simulated Solar System using XRCC in this tutorial.
+This tutorial builds on top of the last Museum tutorial to teach you
+more advanced scene building and behaviour techniques. You will learn
+how to build a multi-scene XR project with gravity by going through this
+tutorial. We recommend that you do this tutorial after finishing the
+Museum tutorial.</p>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-8cb54c4e6c110d1e867510dd05cf4e18.png" width="1774" height="998" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="techniques-covered">Techniques Covered<a href="#techniques-covered" class="hash-link" aria-label="Direct link to Techniques Covered" title="Direct link to Techniques Covered">​</a></h2>
+<p>You will learn the following techniques in this tutorial:</p>
+<table><thead><tr><th>Technique</th><th>Specific Techniques Covered</th></tr></thead><tbody><tr><td>Basic Scene Operation</td><td><ul><li>Set scene skybox</li><li>Toggle scene gravity setting</li><li>Create scene</li><li>Duplicate scene</li></ul></td></tr><tr><td>Advanced Scene Building</td><td><ul><li>Using Link tool to create parent / child relationship</li><li>Using Offset tool to make object rotate about an external tool</li></ul></td></tr><tr><td>Configure 3D Object</td><td><ul><li>Set 3D object material</li><li>Setting physics for 3D objects</li></ul></td></tr><tr><td>Advanced Behaviour Building</td><td><ul><li>Using physics behaviour</li><li>Using variables in behaviour</li><li>Change scene using behaviour block</li><li>Using control flow behaviour blocks</li></ul></td></tr></tbody></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tutorial-project">Tutorial Project<a href="#tutorial-project" class="hash-link" aria-label="Direct link to Tutorial Project" title="Direct link to Tutorial Project">​</a></h2>
+<p>The project used for this tutorial comes in two formats: a starter
+project for use in this step-by-step tutorial, and a completed project
+for your reference after you&#x27;ve completed the tutorial.</p>
+<p>Project files for the solar system tutorial can be found at:</p>
+<p>For this tutorial, the starter project will be used to guide you build
+the Solar System in a step-by-step manner. All the necessary assets
+required for the tutorial are already included in the project, so just
+open the starter project in XRCC and you are ready to go with the
+tutorial.</p>
+<h1>Set the Scene Environment</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="configure-the-scene-skybox">Configure the Scene Skybox<a href="#configure-the-scene-skybox" class="hash-link" aria-label="Direct link to Configure the Scene Skybox" title="Direct link to Configure the Scene Skybox">​</a></h2>
+<ol>
+<li>
+<p>From the Toolbar, press &quot;<strong>Configure Tool</strong>&quot;. Click the selector next to the
+&quot;<strong>Skybox (Cubemap)</strong>&quot; option to open the Selection panel and select
+the &quot;<strong>stars_milky.jpg</strong>&quot; image in your asset library to display the
+image in scene. <em>This sets the selected image as your current
+scene&#x27;s skybox in Cubemap format.</em></p>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/01-1-eebb85160f5fcc2288eb962adf1bf9f8.png" width="1919" height="1079" class="img_ev3q"></p>
+</li>
+<li>
+<p>Since we are using a 360-degree image as the skybox, make sure the
+&quot;Skybox 360 Image&quot; option is selected so it&#x27;s displayed correctly.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="configure-scenes-gameplay-setting">Configure Scene&#x27;s Gameplay Setting<a href="#configure-scenes-gameplay-setting" class="hash-link" aria-label="Direct link to Configure Scene&#x27;s Gameplay Setting" title="Direct link to Configure Scene&#x27;s Gameplay Setting">​</a></h2>
+<ol>
+<li>In the &quot;<strong>Configure Tool</strong>&quot;, set the Default Tool to &quot;<strong>Auto</strong>&quot;
+and Wand Length to &quot;<strong>50</strong>&quot;, <em>this allows you to use a longer wand
+to interact with the virtual environment and teleport to different
+positions in the scene</em>. Then deselect the &quot;<strong>Use Gravity</strong>&quot; option
+so user can float in space during game play.</li>
+</ol>
+<h1>Create the SOLAR SYSTEM</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-the-sun-and-saturn-models">Add the Sun and Saturn Models<a href="#add-the-sun-and-saturn-models" class="hash-link" aria-label="Direct link to Add the Sun and Saturn Models" title="Direct link to Add the Sun and Saturn Models">​</a></h2>
+<ol>
+<li>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Imported Assets</strong>&quot;
+tab, select the &quot;<strong>Sun</strong>&quot; 3D model and use the &quot;<strong>Spawn at World
+Origin</strong>&quot; button to add the model <strong>at (0, 0, 0) position</strong> in the
+scene.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-1-1-4542e175efc81582f7e3fc478c20b4e0.png" width="1774" height="998" class="img_ev3q"></p>
+<ol start="2">
+<li>Also from the &quot;<strong>Imported Assets</strong>&quot; tab, select and add the
+&quot;<strong>Saturn</strong>&quot; object to the scene as well.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/06-9570f4a931d9b4044865e59b9df8f4c5.png" width="1919" height="1079" class="img_ev3q"></p>
+<ol start="3">
+<li>Use the <strong>Move</strong> <strong>transform tool</strong> to adjust the <strong>Z-Axis
+position</strong> of the Saturn, so that it&#x27;s at the same height but far
+apart from the Sun, which is at the (0, 0, 0) position.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/07-6c3273298883b3cb0bb1e0f198762c20.png" width="1919" height="1079" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-other-planets-using-sphere-model">Add Other Planets using Sphere Model<a href="#add-other-planets-using-sphere-model" class="hash-link" aria-label="Direct link to Add Other Planets using Sphere Model" title="Direct link to Add Other Planets using Sphere Model">​</a></h2>
+<ol>
+<li>We will use the Sphere 3D Model to create other planets, open the
+&quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Generic Shapes</strong>&quot; tab, select
+and add the &quot;<strong>Sphere</strong>&quot; object to the scene.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/08-826b32c824cd36875e5891ec484bce63.png" width="1919" height="1079" class="img_ev3q"></p>
+<ol start="2">
+<li>With the sphere still selected, Copy (<strong>Ctrl + C</strong>) and Paste
+(<strong>Ctrl + V</strong>) or Duplicate (<strong>Ctrl + D</strong>) the sphere and use the <strong>transform tools</strong> to set up
+the remaining 8 planets.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/09-b767e1671cb6e567146c18394864e680.png" width="1919" height="1079" class="img_ev3q"></p>
+<ol start="3">
+<li>Select one of the sphere in the scene and open the &quot;<strong>Configure
+Tool</strong>&quot;, under the Model section set the &quot;<strong>Material</strong>&quot; texture to
+the &quot;<strong>earth.jpg</strong>&quot; image in your asset library. Rename the planet
+accordingly in the configure tool. <em>We will use images of different
+planets to transform the plain sphere object into objects
+representing different planets.</em></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/10-20f114ac9f8435e2cc6093d09664e8dd.png" width="1919" height="1079" class="img_ev3q"></p>
+<ol start="4">
+<li>Repeat the same procedure for all other spheres.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/11-bc0d0c061bcca29fd5669a9f81267099.png" width="1919" height="1079" class="img_ev3q"></p>
+<ol start="5">
+<li>For each planet, we set their scale relative to the Earth using data
+from NASA. Open the &quot;<strong>Configure Tool</strong>&quot; to modify the &quot;<strong>Scale</strong>&quot;
+of the planets and use the <strong>transform tools</strong> to reposition them.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/12-c21481cd68efa0aedb92b6f710dd4f5a.png" width="1919" height="1079" class="img_ev3q"></p>
+<p>Below is the reference data from NASA (size ratio &amp; sequence order)</p>
+<table><thead><tr><th></th><th><strong>SUN</strong></th><th><strong>MERCURY</strong></th><th><strong>VENUS</strong></th><th><strong>EARTH</strong></th><th><strong>MOON</strong></th><th><strong>MARS</strong></th></tr></thead><tbody><tr><td>Diameter (x, y, z)</td><td>109.37</td><td>0.383</td><td>0.949</td><td>1</td><td>0.2724</td><td>0.532</td></tr></tbody></table>
+<table><thead><tr><th></th><td><strong>JUPITER</strong></td><td><strong>SATURN</strong></td><td><strong>URANUS</strong></td><td><strong>NEPTUNE</strong></td><td><strong>PLUTO</strong></td></tr></thead><tbody><tr><td>Diameter (x, y, z)</td><td>11.21</td><td>9.45</td><td>4.01</td><td>3.88</td><td>0.187</td></tr></tbody></table>
+<h1>Make the Solar System Orbit and Rotate</h1>
+<ol>
+<li>Select the <strong>Sun</strong> object and click on the &quot;<strong>Behaviour</strong>&quot; tab to
+switch to its behaviour panel. <em>As gravity keeps all planets orbit
+around the sun, we will use the Sun object to store the planets&#x27;
+orbital and rotational speed data.</em></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/13-805dd16676176a4a2cf2713eda129131.png" width="1919" height="1079" class="img_ev3q"></p>
+<ol start="2">
+<li>Select the &quot;<strong>Show Item Variables</strong>&quot; button to open the item
+variables panel. Add a new variable named &quot;<strong>MecuryOrbitalPeriod</strong>&quot;,
+set the variable type to &quot;<strong>Number</strong>&quot; and its <strong>default value</strong> to
+0.241.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/14-8827ef5fe4358cfb78165b2df9d750fe.png" width="1247" height="551" class="img_ev3q"></p>
+<ol start="3">
+<li>Repeat the same procedure to add the orbit and rotation variables
+data for the other planets. <em>The Sun&#x27;s variable panel should look
+similar to the list below.</em></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/15-c2e51b98845e4eb28aa350826801a917.png" width="508" height="443" class="img_ev3q">
+<img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/16-4b0cd472bf0134f9ff82eb5da4767d30.png" width="496" height="372" class="img_ev3q">
+<img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/17-69139b8117f37246cbb181a3e779f7cf.png" width="495" height="382" class="img_ev3q"></p>
+<ol start="4">
+<li>Create 2 more variables &quot;<strong>OrbitSpeedControl</strong>&quot; and
+&quot;<strong>RotateSpeedControl</strong>&quot; to control the general speed of orbit and
+rotation. <em>You may adjust the value of these two speed control
+variables to make all plants orbit or rotate faster/slower.</em></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/20-010889059ed451e0df123b50c50c8b87.png" width="494" height="186" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="set-the-mercury-to-rotate">Set the Mercury to Rotate<a href="#set-the-mercury-to-rotate" class="hash-link" aria-label="Direct link to Set the Mercury to Rotate" title="Direct link to Set the Mercury to Rotate">​</a></h2>
+<ol>
+<li>Select the <strong>Mercury</strong> object and click on the &quot;<strong>Behaviour</strong>&quot; tab
+to switch to its behaviour panel.</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/21-6103d02b11061225476e00613df3652f.png" width="1919" height="1079" class="img_ev3q"></p>
+<ol start="2">
+<li>In the &quot;<strong>General Event</strong>&quot; category, drag and drop the &quot;<strong>Start</strong>&quot;
+event trigger block onto the behaviour canvas. Then switch to the
+&quot;<strong>Flow Control</strong>&quot; category, drag and drop the &quot;<strong>Repeat</strong>&quot; block
+onto the behaviour canvas, and add the &quot;<strong>Rotate</strong>&quot; block from
+&quot;<strong>Motion</strong>&quot; category to the behaviour canvas as well. Connect the
+&quot;<strong>Start</strong>&quot; block&#x27;s out flow node with the &quot;<strong>Repeat</strong>&quot; block&#x27;s in
+flow node, and &quot;<strong>Repeat</strong>&quot; block&#x27;s out flow node with &quot;<strong>Rotate</strong>&quot;
+block&#x27;s in flow node. <em>This sets up the basic logic for the Mercury
+object to repeatedly rotate when the scene starts.</em></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/22-6eff6d11aec25ee13e142c39f055dfff.png" width="1919" height="1079" class="img_ev3q"></p>
+<ol start="3">
+<li>
+<p>We then specify how much the object will rotate. In the &quot;<strong>Math</strong>&quot;
+category, drag and drop the &quot;<strong>Vector3</strong>&quot; block onto the behaviour
+canvas. Then, set the <strong>Y</strong> value of the &quot;<strong>Vector3</strong>&quot; block to
+<strong>360</strong> and connect its <strong>Output</strong> node with the &quot;<strong>Rotate</strong>&quot;
+block&#x27;s <strong>Angle</strong> node. <em>We set the planets to rotate 360 degrees
+repeatedly, yet the rotation will not happen with the Time set to
+0.</em></p>
+</li>
+<li>
+<p>Drag and drop a &quot;<strong>Multiply</strong>&quot; block from the &quot;<strong>Math</strong>&quot; category,
+then switch to the &quot;<strong>Variable</strong>&quot; category, drag and drop <strong>two</strong>
+&quot;<strong>Get Number</strong>&quot; blocks onto the behaviour canvas. For both &quot;<strong>Get
+Number</strong>&quot; blocks, select &quot;<strong>sun</strong>&quot; as the &quot;<strong>Target</strong>&quot;, then set one
+&quot;<strong>Key</strong>&quot; to &quot;<strong>MercuryRotationPeriod</strong>&quot; and the other to
+&quot;<strong>RotateSpeedControl</strong>&quot;. Connect one &quot;<strong>Get Number</strong>&quot; block&#x27;s
+<strong>Output</strong> node with the &quot;<strong>Multiply</strong>&quot; block&#x27;s <strong>A</strong> node and
+connect the other &quot;<strong>Get Number</strong>&quot; block&#x27;s <strong>Output</strong> node with
+&quot;<strong>Multiply</strong>&quot; block&#x27;s <strong>B</strong> node. Finally, connect &quot;<strong>Multiply</strong>&quot;
+block&#x27;s <strong>Output</strong> node with &quot;<strong>Rotate</strong>&quot; block&#x27;s <strong>Time</strong> node.</p>
+</li>
+<li>
+<p>This is the close-up of the whole behaviour flow of the Mercury.
+<em>This sets the Mercury object to rotate 360 degrees against its
+centre of origin every period, which value is defined as the product
+of the &quot;MercuryRotationPeriod&quot; and the &quot;RotateSpeedControl&quot; values.</em></p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-8cb54c4e6c110d1e867510dd05cf4e18.png" width="1774" height="998" class="img_ev3q"></p>
+<ol start="6">
+<li>Press the &quot;<strong>Play</strong>&quot; button to enter play mode, move or
+teleport to near the Mercury planet and check if it&#x27;s rotating as
+expected. Then use the &quot;<strong>Esc</strong>&quot; button to return to scene editing.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="set-the-mercury-to-orbit">Set the Mercury to Orbit<a href="#set-the-mercury-to-orbit" class="hash-link" aria-label="Direct link to Set the Mercury to Orbit" title="Direct link to Set the Mercury to Orbit">​</a></h2>
+<ol>
+<li>
+<p>We will use an empty object <strong>Linked to a Planet</strong> to create the
+Orbit effect. First, add an &quot;<strong>Empty Object</strong>&quot; to the scene and make
+sure it&#x27;s <strong>spawned at the origin</strong> (same position as the Sun).</p>
+</li>
+<li>
+<p>Select the &quot;<strong>Empty Object</strong>&quot; and rename it as <strong>mercuryEmpty</strong> in
+the &quot;<strong>Configure Tool</strong>&quot;.</p>
+</li>
+<li>
+<p>Hide the <strong>&quot;Sun&quot;</strong> object in editor.</p>
+</li>
+<li>
+<p>Select the &quot;<strong>Mercury</strong>&quot; object, press the &quot;<strong>Link to another
+item</strong>&quot; button then point and click the <strong>mercuryEmpty</strong> object to
+make mercuryEmpty a <strong>parent</strong> of the <strong>Mercury</strong> object. <em>Now the
+Mercury object will move together with the mercuryEmpty parent
+object while keeping the same relative position / rotation between
+them.</em></p>
+</li>
+<li>
+<p>To confirm the two objects are linked successfully, you can select
+the &quot;mercuryEmpty&quot; parent object in the scene and observe that the
+&quot;Mercury&quot; child object is also selected.</p>
+</li>
+<li>
+<p>With the <strong>mercuryEmpty</strong> object still selected, click on the
+&quot;<strong>Behaviour</strong>&quot; tab to switch to its behaviour panel.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-2-d144cff3836feb7733b68ff257fd61e6.png" width="1774" height="998" class="img_ev3q"></p>
+<ol start="7">
+<li>
+<p>Drag and drop a &quot;<strong>Start</strong>&quot; event trigger block, a &quot;<strong>Repeat</strong>&quot;
+block and a &quot;<strong>Rotate</strong>&quot; block onto the behaviour canvas in the same
+way as you did for the Mercury object, then connect the blocks
+sequentially.</p>
+</li>
+<li>
+<p>Following the same logic for rotating the &quot;Mercury&quot; object, drag and
+drop a &quot;<strong>Vector3</strong>&quot; block and a &quot;<strong>Multiply</strong>&quot; blocks, then add
+<strong>two</strong> &quot;<strong>Get Number</strong>&quot; blocks onto the behaviour canvas. Set the
+<strong>Y</strong> value of the &quot;<strong>Vector3</strong>&quot; block to <strong>360</strong> and connect its
+<strong>Output</strong> node with the &quot;<strong>Rotate</strong>&quot; block&#x27;s <strong>Angle</strong> node. For
+both &quot;<strong>Get Number</strong>&quot; blocks, select &quot;<strong>sun</strong>&quot; as the &quot;<strong>Target</strong>&quot;,
+then set one &quot;<strong>Key</strong>&quot; to &quot;<strong>MercuryOrbitalPeriod</strong>&quot; and the other
+to &quot;<strong>OrbitSpeedControl</strong>&quot;. Connect one &quot;<strong>Get Number</strong>&quot; block&#x27;s
+<strong>Output</strong> node with the &quot;<strong>Multiply</strong>&quot; block&#x27;s <strong>A</strong> node and
+connect the other &quot;<strong>Get Number</strong>&quot; block&#x27;s <strong>Output</strong> node with
+&quot;<strong>Multiply</strong>&quot; block&#x27;s <strong>B</strong> node. Finally, connect &quot;<strong>Multiply</strong>&quot;
+block&#x27;s <strong>Output</strong> node with &quot;<strong>Rotate</strong>&quot; block&#x27;s <strong>Time</strong> node.</p>
+</li>
+<li>
+<p>This is the close-up of the whole behaviour flow of the
+mercuryEmpty. <em>This sets the mercuryEmpty object to rotate 360
+degrees against its centre of origin every period, which value is
+defined as the product of the &quot;MercuryOrbitPeriod&quot; and the
+&quot;OrbitSpeedControl&quot; values.</em></p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-1-920e3270b7ebe8151b6d8165f98b77cd.png" width="1774" height="998" class="img_ev3q"></p>
+<ol start="10">
+<li>Press the &quot;<strong>Play</strong>&quot; button to enter play mode, the Mercury
+planet should be rotating and orbit around the Sun simultaneously.
+Then use the &quot;<strong>Esc</strong>&quot; button to return to scene editing.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="set-up-orbit-and-rotation-for-other-planets">Set up Orbit and Rotation for Other Planets<a href="#set-up-orbit-and-rotation-for-other-planets" class="hash-link" aria-label="Direct link to Set up Orbit and Rotation for Other Planets" title="Direct link to Set up Orbit and Rotation for Other Planets">​</a></h2>
+<ol>
+<li>
+<p>We can apply the same rotate and orbit logic to other planets. Here
+we will use the Venus as an example.</p>
+</li>
+<li>
+<p>To start, first Copy (<strong>Ctrl + C</strong>) and Paste
+(<strong>Ctrl + V</strong>) or Duplicate (<strong>Ctrl + D</strong>) the <strong>mercuryEmpty</strong> object, make sure it&#x27;s <strong>resided
+at the origin</strong> at (0, 0, 0). Rename the duplicated object as
+&quot;<strong>venusEmpty</strong>&quot; and set it as <strong>parent object to Venus</strong> using the
+&quot;<strong>Link</strong>&quot; tool.</p>
+</li>
+<li>
+<p>Open the Mecury object&#x27;s behaviour panel then select and copy
+(<strong>Ctrl + C</strong>) the whole behaviour flow in the Main layer, which is used to rotate the planet.</p>
+</li>
+<li>
+<p>Then open the Venus object&#x27;s behaviour panel, Paste (<strong>Ctrl + V</strong>) the copied behaviour
+flow and update the corresponding &quot;<strong>Key</strong>&quot; in the &quot;<strong>Get Number</strong>&quot;
+block attached to Multiply block&#x27;s <strong>A</strong> node from
+&quot;<strong>MercuryRotationPeriod</strong>&quot; to &quot;<strong>VenusRotationPeriod</strong>&quot;.</p>
+</li>
+<li>
+<p>Open the mercuryEmpty object&#x27;s behaviour panel and copy (<strong>Ctrl + C</strong>) the whole behaviour
+flow of mercuryEmpty in the Main layer.</p>
+</li>
+<li>
+<p>Paste the copied behaviour flow to venusEmpty object&#x27;s behaviour
+panel, and update the corresponding &quot;<strong>Key</strong>&quot; in the &quot;<strong>Get
+Number</strong>&quot; block accordingly.</p>
+</li>
+<li>
+<p>Repeat the same procedure for all other planets, except for the
+Moon.</p>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-3-e0a1daf450c2f4caef07981751aedf00.png" width="1774" height="998" class="img_ev3q"></p>
+</li>
+<li>
+<p>Press the &quot;<strong>Play</strong>&quot; button to enter play mode, all planets
+should be rotating and orbiting at their own speed except for the
+Moon, which is the Earth&#x27;s satellite.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="set-moon-to-orbit-around-earth">Set Moon to Orbit Around Earth<a href="#set-moon-to-orbit-around-earth" class="hash-link" aria-label="Direct link to Set Moon to Orbit Around Earth" title="Direct link to Set Moon to Orbit Around Earth">​</a></h2>
+<ol>
+<li>
+<p>As the Moon is following the Earth&#x27;s Orbit around the Sun as well as
+the Earth&#x27;s own rotation at the same time, we will simulate this
+movement using both the earthEmpty parent object and with the Offset
+Tool.</p>
+</li>
+<li>
+<p>Select the &quot;<strong>Moon</strong>&quot; object and use the &quot;<strong>Link</strong>&quot; button to parent
+it with the <strong>earthEmpty</strong> object.</p>
+</li>
+<li>
+<p>Then copy the <strong>X, Y, Z position</strong> as displayed in the <strong>Earth</strong>&#x27;s
+Configure Tool and set the <strong>Moon&#x27;s X, Y, Z position</strong> to these
+values. <em>Now the Moon should be completely inside the Earth and
+sharing the same position.</em></p>
+</li>
+<li>
+<p>With the &quot;<strong>Moon</strong>&quot; object still selected, use the &quot;<strong>Offset Tool</strong>&quot;
+or set the Moon&#x27;s X-Axis Offset value to 2 in the &quot;<strong>Configure
+Tool</strong>&quot;. Now the Sphere representing the Moon should be shown
+outside of the Earth object, but its centre still overlaps with the
+Earth object.</p>
+</li>
+<li>
+<p>Now we will add behaviour to make the Moon orbit around the Earth.
+Select the <strong>Mercury</strong> object&#x27;s behaviour panel and copy the
+behaviour defined in the Main layer for making the Mercury rotate.
+Switch to the <strong>Moon</strong>&#x27;s behaviour panel and paste the behaviour
+flow to the canvas. In the &quot;<strong>Get Number&quot;</strong> blocks, change the
+<strong>Key</strong> to &quot;<strong>MoonOrbitalPeriod</strong>&quot; and &quot;<strong>OrbitSpeedControl</strong>&quot;
+respectively. <em>This time, since we have offset the Moon sphere model
+in the previous step, rotating the Moon object will result in an
+orbiting movement of the Moon sphere model.</em></p>
+</li>
+<li>
+<p>Enter play mode to check out how the Moon orbits around the Earth.</p>
+</li>
+</ol>
+<h1>Create New Planet Scene</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-the-welcome-text">Add the Welcome Text<a href="#add-the-welcome-text" class="hash-link" aria-label="Direct link to Add the Welcome Text" title="Direct link to Add the Welcome Text">​</a></h2>
+<ol>
+<li>
+<p>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Specialize Objects</strong>&quot;
+tab, select and add the &quot;<strong>Text Object</strong>&quot; to the scene to create a
+Welcome Textbox.</p>
+</li>
+<li>
+<p>Use the <strong>transform tools</strong> (move / rotate / scale) to reposition
+the text object. Then open the &quot;<strong>Configure Tool</strong>&quot; to set up the
+text content, font size, and colour of the text object.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-4-1cdadf376d1ee8680512db7bd287b2e7.png" width="1774" height="998" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="set-up-the-mercury-scene">Set up the Mercury Scene<a href="#set-up-the-mercury-scene" class="hash-link" aria-label="Direct link to Set up the Mercury Scene" title="Direct link to Set up the Mercury Scene">​</a></h2>
+<ol>
+<li>
+<p>Open the &quot;<strong>Scene Menu</strong>&quot; and select the &quot;<strong>Add New Scene</strong>&quot; button
+to create a new scene.</p>
+</li>
+<li>
+<p>Select the &quot;<strong>Empty Scene</strong>&quot; template and add it to the project.</p>
+</li>
+<li>
+<p>Rename the Empty Scene as &quot;<strong>Mercury Scene</strong>&quot; and press &quot;<strong>Change
+to</strong>&quot; to open the new Mercury Scene.</p>
+</li>
+<li>
+<p>In the Mercury Scene, open the &quot;<strong>New Item Panel</strong>&quot; and add a
+&quot;<strong>Ground</strong>&quot; object to the scene.</p>
+</li>
+<li>
+<p>Modifying the &quot;<strong>Scale</strong>&quot; of the Ground object using either the
+<strong>transform tools</strong> or directly in the &quot;<strong>Configure Tool</strong>&quot;. <em>We
+want to have a large enough area for the player to move around.</em></p>
+</li>
+<li>
+<p>Add a &quot;<strong>2D Image Object</strong>&quot; to the scene. <em>We will be using this 2D
+Image Object to simulate the appearance of Mercury in the scene.</em></p>
+</li>
+<li>
+<p>Open the &quot;<strong>Configure Tool</strong>&quot; and modify the &quot;<strong>Scale</strong>&quot; of the 2D
+Image Object so it&#x27;s in similar size as the Ground object. Then,
+click the selector next to the &quot;<strong>Image Asset</strong>&quot; option to open the
+Selection panel and select the &quot;<strong>mercury.jpg</strong>&quot; image in your asset
+library to simulate mercury&#x27;s ground appearance. <em>This is the same
+image used for the Sphere of Mercury planet, but shown in 2D format
+instead.</em></p>
+</li>
+<li>
+<p>Click at any empty space in the scene to select the <strong>Scene</strong> and
+open its &quot;<strong>Configure Tool</strong>&quot;. Here we use the same
+&quot;<strong>stars_milky.jpg</strong>&quot; in your asset library to set the skybox 360
+image.</p>
+</li>
+<li>
+<p>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Imported Assets</strong>&quot;
+tab, select and add the 3 &quot;<strong>rock</strong>&quot; objects to the scene. Use the
+<strong>transform tools</strong> (move / rotate / scale) to adjust the size and
+position of the rock objects.</p>
+</li>
+<li>
+<p>Select one of the rock object and open its &quot;<strong>Configure Tool</strong>&quot;.
+Make sure both the &quot;<strong>Interactable</strong>&quot; and &quot;<strong>Grabbable</strong>&quot; options
+are selected. Then, &quot;<strong>Enable</strong>&quot; the Physics setting as well as the
+&quot;<strong>Use Gravity</strong>&quot; option . Repeat these procedures for the other
+rock objects.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-6-a0ecd1ca111dace618c2add17bdcd3fd.png" width="1774" height="998" class="img_ev3q"></p>
+<ol start="11">
+<li>
+<p>You have now finished setting up the grab interaction and enabled
+gravity for the rock objects. Press the &quot;<strong>Play</strong>&quot; button and <strong>press the right mouse
+button</strong> to grab the rocks to test. <em>They should fall to the ground
+with simulated Earth gravity when you release the mouse button.</em></p>
+</li>
+<li>
+<p>Press &quot;<strong>Esc</strong>&quot; to exit play mode after you&#x27;ve done testing your
+scene.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-add-force-to-simulate-gravity-of-the-planet">Use Add Force to Simulate Gravity of the Planet<a href="#use-add-force-to-simulate-gravity-of-the-planet" class="hash-link" aria-label="Direct link to Use Add Force to Simulate Gravity of the Planet" title="Direct link to Use Add Force to Simulate Gravity of the Planet">​</a></h2>
+<ol>
+<li>
+<p>Since the &quot;Use Gravity&quot; option simulates the Earth gravity, we want
+to turn off the earth gravity and simulate the Mercury gravity using
+Physics behaviour blocks. Before setting the behaviour flow, first
+open the rocks&#x27; Configure Tool and <strong>deselect &quot;Use Gravity&quot;</strong> under
+Physics setting <strong>while leaving Physics &quot;Enabled&quot;</strong>.</p>
+</li>
+<li>
+<p>Select a rock object and click on the &quot;<strong>Behaviour</strong>&quot; tab to switch
+to its behaviour panel.</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-5-82423acdd4e4e3be1770f847610b7fb3.png" width="1774" height="998" class="img_ev3q"></p>
+<ol start="3">
+<li>
+<p>Drag and drop a &quot;<strong>Start</strong>&quot; event trigger block, then a &quot;<strong>Repeat</strong>&quot;
+block and &quot;<strong>Wait For</strong>&quot; block from the &quot;<strong>Flow Control</strong>&quot; category
+to the behaviour canvas. Switch to the &quot;<strong>Physics</strong>&quot; category, drag
+and drop the &quot;<strong>Add Force</strong>&quot; block onto the behaviour canvas.
+Connect the blocks sequentially. Then set the <strong>Time</strong> on &quot;<strong>Wait
+For</strong>&quot; block to <strong>0.1</strong>. <em>We want to add force to the rock object
+every 0.1 second.</em></p>
+</li>
+<li>
+<p>From the &quot;<strong>Math</strong>&quot; category, drag and drop a &quot;<strong>Vector3</strong>&quot; block to
+the canvas, then connect its <strong>Output</strong> node to the &quot;<strong>Add Force</strong>&quot;
+block&#x27;s <strong>Force</strong> node. Set the Y value of &quot;<strong>Vector3</strong>&quot; to -0.37.
+<em>(The equation of the Force Add in Mercury = -(Gravity of Mercury
+3.7 divided by 10 FPS)). We fix the FPS to 10 frames per seconds. So
+every 0.1 seconds, we add one tenth of the Mercury&#x27;s gravity to the
+rock in a downward direction.</em></p>
+</li>
+<li>
+<p>Select the whole behaviour flow, Copy (<strong>Ctrl + C</strong>) and Paste (<strong>Ctrl + V</strong>) the behaviour flow
+to the other two rock objects.</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-welcome-text-and-return-button-when-clicked">Add Welcome Text and Return Button when Clicked<a href="#add-welcome-text-and-return-button-when-clicked" class="hash-link" aria-label="Direct link to Add Welcome Text and Return Button when Clicked" title="Direct link to Add Welcome Text and Return Button when Clicked">​</a></h2>
+<ol>
+<li>
+<p>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Specialized Objects</strong>&quot;
+tab, select and add the &quot;<strong>Text Object</strong>&quot; to the scene.</p>
+</li>
+<li>
+<p>Use the <strong>transform tools</strong> (move / rotate / scale) to reposition
+the text object. Then open the &quot;<strong>Configure Tool</strong>&quot; to set up the
+text content, font size, and colour of the text object.</p>
+</li>
+<li>
+<p>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Specialized Objects</strong>&quot;
+tab, select and add the &quot;<strong>Text Object</strong>&quot; to the scene.</p>
+</li>
+<li>
+<p>Use the <strong>transform tools</strong> (move / rotate / scale) to reposition
+the button object. Then open the &quot;<strong>Configure Tool</strong>&quot; to set up the
+text content, font size, and colour of the button object.</p>
+</li>
+<li>
+<p>Select the button object and open its behaviour panel. Under
+&quot;<strong>Groups</strong>&quot;, add a new behaviour group named &quot;<strong>return</strong>&quot; and
+toggle the &quot;<strong>Action</strong>&quot; button to make it an action that can be
+called by other objects. An &quot;<strong>Action Start</strong>&quot; event trigger block
+will appear on the canvas.</p>
+</li>
+<li>
+<p>Switch to behaviour Library, under the &quot;<strong>Scene</strong>&quot; category drag the
+&quot;<strong>Change Scene</strong>&quot; block and append it behind the &quot;<strong>Action Start</strong>&quot;
+block. Select the &quot;<strong>Solar System</strong>&quot; scene under &quot;Change Scene&quot;
+block&#x27;s &quot;<strong>Scene</strong>&quot; option, then connect the &quot;<strong>Action Start</strong>&quot;
+block and the &quot;<strong>Change Scene</strong>&quot; block. <em>When this action is called,
+the scene will be changed back to the Solar System.</em></p>
+</li>
+<li>
+<p>Select the &quot;<strong>Button Object</strong>&quot; and open its &quot;<strong>Configure Tool</strong>&quot;
+scroll down to select the &quot;<strong>Action</strong>&quot; option for the button. On the
+selection panel, select the button object from the item list on the
+left side, then choose the &quot;<strong>return</strong>&quot; action on the right and
+select the action. <em>This will set up the &quot;Click here to return solar
+system&quot; button object to call the &quot;return&quot; action to change back to
+the &quot;Solar System&quot; scene when the button is clicked.</em></p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-outline-effect-to-objects">Add Outline Effect to Objects<a href="#add-outline-effect-to-objects" class="hash-link" aria-label="Direct link to Add Outline Effect to Objects" title="Direct link to Add Outline Effect to Objects">​</a></h2>
+<ol>
+<li>
+<p>In the Mercury scene, open the behaviour panel for one of the rocks.
+Construct a behaviour flow using &quot;<strong>Start</strong>&quot; event trigger block,
+&quot;<strong>Color</strong>&quot; Math block and &quot;<strong>Outline</strong>&quot; Effect block. Set the
+&quot;<strong>R</strong>&quot; (red) value of the Color block to <strong>255</strong> and the &quot;<strong>A</strong>&quot;
+(alpha) value of the Color block to <strong>255</strong>, and all other values to
+0, the color preview under the &quot;<strong>Output</strong>&quot; node should show a red
+color. Connect all the blocks in the same manner as shown below.
+<em>This gives the rocks a red outline when scene starts.</em></p>
+</li>
+<li>
+<p>Drag the behaviour canvas to an empty space, create another
+behaviour flow using &quot;<strong>Start Pointing</strong>&quot; event trigger block, a
+&quot;<strong>Color</strong>&quot; Math block and an &quot;<strong>Outline</strong>&quot; Effect block. Set the
+&quot;<strong>G</strong>&quot; (green) value of the Color block to <strong>255</strong> and the &quot;<strong>A</strong>&quot;
+(alpha) value of the Color block to <strong>255</strong>, and all other values to
+0, the color preview under the &quot;<strong>Output</strong>&quot; node should show a green
+color. Connect all the blocks in the same manner as shown below.
+<em>This gives the rocks a green outline when pointed at with the
+Wand.</em></p>
+</li>
+<li>
+<p>Copy and paste the above behaviour blocks to another empty space on
+the canvas, then replace the &quot;<strong>Start Pointing</strong>&quot; block with a
+&quot;<strong>Stop Pointing</strong>&quot; block. Set the &quot;<strong>Color</strong>&quot; block value to red
+for this behaviour flow. <em>This time, the rocks will again show a red
+outline when the Wand stops pointing at it.</em></p>
+</li>
+<li>
+<p>Select the whole outline effects behaviour flow, Copy (<strong>Ctrl + C</strong>) and Paste
+(<strong>Ctrl + V</strong>) all the behaviour
+flows to the other two rock objects.</p>
+</li>
+<li>
+<p><strong>Deselect any objects</strong> in the scene and open the &quot;<strong>Configure
+Tool</strong>&quot; to configure the scene settings. Select &quot;<strong>Wand</strong>&quot; as the
+&quot;<strong>Default Tool</strong>&quot;. This sets the Wand tool as the default
+interaction tool in XR mode. Then change the &quot;<strong>Wand Length</strong>&quot; into
+&quot;<strong>10</strong>&quot;.</p>
+</li>
+<li>
+<p>You have now finished setting up the outline effects for the rock
+objects. Press the &quot;<strong>Play</strong>&quot; button and test your scene. The rocks
+would show a green outline when pointed and a red outline in other
+circumstances. Press &quot;<strong>Esc</strong>&quot; to exit play mode after you&#x27;ve done
+testing your scene.</p>
+</li>
+<li>
+<p>We can apply the same technique to add outline to the planets in the
+&quot;Solar System&quot; scene. Use the Mercury object as an example, we first
+select it and open its behaviour panel.</p>
+</li>
+<li>
+<p>Paste (<strong>Ctrl + V</strong>) the whole outline
+effects behaviour flow onto the Mercury object&#x27;s Main layer canvas.</p>
+</li>
+<li>
+<p>We also add another behaviour flow to the Mercury object, so the
+user will be directed to the Mercury scene when the Mercury object
+is clicked.</p>
+</li>
+<li>
+<p>You have now finished setting up the outline effects for the Mercury
+planet. Press the &quot;<strong>Play</strong>&quot; button and test your scene, then use the
+Wand to click the &quot;<strong>Mercury</strong>&quot; planet to enter the Mercury scene.</p>
+<p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-7-0a07fd6081c48fd33c012d5104384265.png" width="1774" height="998" class="img_ev3q"></p>
+</li>
+<li>
+<p>Press &quot;<strong>Esc</strong>&quot; to exit play mode after you&#x27;ve done testing the
+change scene feature.</p>
+</li>
+</ol>
+<h1>Set up other Planets&#x27; Scenes</h1>
+<ol>
+<li>
+<p>You can use the Mercury scene as a template to create and set up
+scenes for the other planets. This can be achieved using the
+&quot;Duplicate Scene&quot; button on the Scene panel.</p>
+</li>
+<li>
+<p>From any scene, open the &quot;<strong>Scene Menu</strong>&quot; and press the
+&quot;<strong>Duplicate</strong>&quot; button for the Mercury scene to duplicate the scene
+and all objects configured in the scene. Rename the scene to Venus
+then double click the Venus scene to enter.</p>
+</li>
+<li>
+<p>Select the text object in the Venus scene and edit its Text content
+using the &quot;<strong>Configure Tool</strong>&quot;, change the planet name from Mercury
+to Venus.</p>
+</li>
+<li>
+<p>Then replace the &quot;<strong>Image Asset</strong>&quot; that&#x27;s used as ground appearance
+to &quot;<strong>venus.jpg&quot;</strong>.</p>
+</li>
+<li>
+<p>Lastly, select the rocks on the ground and open their behaviour
+panel.</p>
+</li>
+<li>
+<p>Change the add force data in the &quot;<strong>Vector3</strong>&quot; block to -0.89 to
+simulate Venus gravity.
+(The equation of the Force Add in Venus = -(Gravity of Venus/FPS))</p>
+</li>
+<li>
+<p>Repeat the same procedure for other planets.</p>
+</li>
+</ol></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/XRCC_Tutorial/Tutorial/Project1-Museum"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Project 1 - Museum</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#techniques-covered" class="table-of-contents__link toc-highlight">Techniques Covered</a></li><li><a href="#tutorial-project" class="table-of-contents__link toc-highlight">Tutorial Project</a></li><li><a href="#configure-the-scene-skybox" class="table-of-contents__link toc-highlight">Configure the Scene Skybox</a></li><li><a href="#configure-scenes-gameplay-setting" class="table-of-contents__link toc-highlight">Configure Scene&#39;s Gameplay Setting</a></li><li><a href="#add-the-sun-and-saturn-models" class="table-of-contents__link toc-highlight">Add the Sun and Saturn Models</a></li><li><a href="#add-other-planets-using-sphere-model" class="table-of-contents__link toc-highlight">Add Other Planets using Sphere Model</a></li><li><a href="#set-the-mercury-to-rotate" class="table-of-contents__link toc-highlight">Set the Mercury to Rotate</a></li><li><a href="#set-the-mercury-to-orbit" class="table-of-contents__link toc-highlight">Set the Mercury to Orbit</a></li><li><a href="#set-up-orbit-and-rotation-for-other-planets" class="table-of-contents__link toc-highlight">Set up Orbit and Rotation for Other Planets</a></li><li><a href="#set-moon-to-orbit-around-earth" class="table-of-contents__link toc-highlight">Set Moon to Orbit Around Earth</a></li><li><a href="#add-the-welcome-text" class="table-of-contents__link toc-highlight">Add the Welcome Text</a></li><li><a href="#set-up-the-mercury-scene" class="table-of-contents__link toc-highlight">Set up the Mercury Scene</a></li><li><a href="#use-add-force-to-simulate-gravity-of-the-planet" class="table-of-contents__link toc-highlight">Use Add Force to Simulate Gravity of the Planet</a></li><li><a href="#add-welcome-text-and-return-button-when-clicked" class="table-of-contents__link toc-highlight">Add Welcome Text and Return Button when Clicked</a></li><li><a href="#add-outline-effect-to-objects" class="table-of-contents__link toc-highlight">Add Outline Effect to Objects</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/GeneralGuide/Overview">General Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/PCMode/Introduction">PC Mode</a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/XRMode/Introduction">XR Mode</a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/BehaviourOverview/Introduction">Behaviour Overview</a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/Tutorial/Introduction">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.votanic.com/zh-hk/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Votanic<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/Fq86WKbtaN" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/FAQ">FAQ</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2019-2024 VOTANIC Limited All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
