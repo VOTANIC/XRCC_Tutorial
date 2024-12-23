@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">XRCC Tutorial - Solar System | XRCC Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://votanic.github.io/XRCC_Tutorial/img/XRCCMiniLogo.png"><meta data-rh="true" name="twitter:image" content="https://votanic.github.io/XRCC_Tutorial/img/XRCCMiniLogo.png"><meta data-rh="true" property="og:url" content="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project2-SolarSystem"><meta data-rh="true" property="og:locale" content="en_GB"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="XRCC Tutorial - Solar System | XRCC Documentation"><meta data-rh="true" name="description" content="You will build a simulated Solar System using XRCC in this tutorial."><meta data-rh="true" property="og:description" content="You will build a simulated Solar System using XRCC in this tutorial."><link data-rh="true" rel="icon" href="/XRCC_Tutorial/img/XRCCMiniLogo.png"><link data-rh="true" rel="canonical" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project2-SolarSystem"><link data-rh="true" rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project2-SolarSystem" hreflang="en-GB"><link data-rh="true" rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project2-SolarSystem" hreflang="x-default"><link rel="stylesheet" href="/XRCC_Tutorial/assets/css/styles.eb80aca6.css">
-<script src="/XRCC_Tutorial/assets/js/runtime~main.eaf2e203.js" defer="defer"></script>
-<script src="/XRCC_Tutorial/assets/js/main.39fc0f1a.js" defer="defer"></script>
+<script src="/XRCC_Tutorial/assets/js/runtime~main.6441a372.js" defer="defer"></script>
+<script src="/XRCC_Tutorial/assets/js/main.311f3935.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/XRCC_Tutorial/"><div class="navbar__logo"><img src="/XRCC_Tutorial/img/Icon/XRCCLogoLight.svg" alt="Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/XRCC_Tutorial/img/Icon/XRCCLogoDark.svg" alt="Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/GeneralGuide/Overview/">General Guide</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/PCMode/Introduction/">PC Mode</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/XRMode/Introduction/">XR Mode</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/BehaviourOverview/Introduction">Behaviour</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/XRCC_Tutorial/Tutorial/Introduction">Tutorial</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/FAQ/">Support</a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input"><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="navbar__item header-separater"> </div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Introduction">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Project1-Museum">Project 1 - Museum</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/XRCC_Tutorial/Tutorial/Project2-SolarSystem">Project 2 - Solar System</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/XRCC_Tutorial/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Project 2 - Solar System</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>XRCC Tutorial - Solar System</h1></header>
@@ -34,8 +34,8 @@ tutorial.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="configure-the-scene-skybox">Configure the Scene Skybox<a href="#configure-the-scene-skybox" class="hash-link" aria-label="Direct link to Configure the Scene Skybox" title="Direct link to Configure the Scene Skybox">​</a></h2>
 <ol>
 <li>
-<p>From the Toolbar, press &quot;<strong>Configure Tool</strong>&quot;. Click the selector next to the
-&quot;<strong>Skybox (Cubemap)</strong>&quot; option to open the Selection panel and select
+<p>From the Toolbar, press &quot;<strong>Inspector</strong>&quot;. Click the selector next to the
+&quot;<strong>Skybox</strong>&quot; option to open the Selection panel and select
 the &quot;<strong>stars_milky.jpg</strong>&quot; image in your asset library to display the
 image in scene. <em>This sets the selected image as your current
 scene&#x27;s skybox in Cubemap format.</em></p>
@@ -43,13 +43,13 @@ scene&#x27;s skybox in Cubemap format.</em></p>
 </li>
 <li>
 <p>Since we are using a 360-degree image as the skybox, make sure the
-&quot;Skybox 360 Image&quot; option is selected so it&#x27;s displayed correctly.</p>
+&quot;360 Skybox Effect&quot; option is selected so it&#x27;s displayed correctly.</p>
 </li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="configure-scenes-gameplay-setting">Configure Scene&#x27;s Gameplay Setting<a href="#configure-scenes-gameplay-setting" class="hash-link" aria-label="Direct link to Configure Scene&#x27;s Gameplay Setting" title="Direct link to Configure Scene&#x27;s Gameplay Setting">​</a></h2>
 <ol>
-<li>In the &quot;<strong>Configure Tool</strong>&quot;, set the Default Tool to &quot;<strong>Auto</strong>&quot;
-and Wand Length to &quot;<strong>50</strong>&quot;, <em>this allows you to use a longer wand
+<li>Select &quot;<strong>User Setting</strong>&quot; and press &quot;<strong>Inspector</strong>&quot;, set the Default Tool to &quot;<strong>Auto</strong>&quot;
+at &quot;XR Setting&quot; tab and &quot;<strong>Interaction Scope (Wand Length)</strong>&quot; to &quot;<strong>50</strong>&quot; at &quot;Play Mode&quot; tab, <em>this allows you to use a longer wand
 to interact with the virtual environment and teleport to different
 positions in the scene</em>. Then deselect the &quot;<strong>Use Gravity</strong>&quot; option
 so user can float in space during game play.</li>
@@ -57,14 +57,14 @@ so user can float in space during game play.</li>
 <h1>Create the SOLAR SYSTEM</h1>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-the-sun-and-saturn-models">Add the Sun and Saturn Models<a href="#add-the-sun-and-saturn-models" class="hash-link" aria-label="Direct link to Add the Sun and Saturn Models" title="Direct link to Add the Sun and Saturn Models">​</a></h2>
 <ol>
-<li>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Imported Assets</strong>&quot;
-tab, select the &quot;<strong>Sun</strong>&quot; 3D model and use the &quot;<strong>Spawn at World
-Origin</strong>&quot; button to add the model <strong>at (0, 0, 0) position</strong> in the
+<li>Open the &quot;<strong>Asset Panel</strong>&quot; and press the &quot;<strong>Select 3D Model</strong>&quot;
+button, select the &quot;<strong>Sun</strong>&quot; 3D model and use the &quot;<strong>World Center</strong>&quot;
+button to add the model <strong>at (0, 0, 0) position</strong> in the
 scene.</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/image-1-1-4542e175efc81582f7e3fc478c20b4e0.png" width="1774" height="998" class="img_ev3q"></p>
 <ol start="2">
-<li>Also from the &quot;<strong>Imported Assets</strong>&quot; tab, select and add the
+<li>Also press the &quot;<strong>Select 3D Model</strong>&quot; button, select and add the
 &quot;<strong>Saturn</strong>&quot; object to the scene as well.</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/06-9570f4a931d9b4044865e59b9df8f4c5.png" width="1919" height="1079" class="img_ev3q"></p>
@@ -77,7 +77,7 @@ apart from the Sun, which is at the (0, 0, 0) position.</li>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-other-planets-using-sphere-model">Add Other Planets using Sphere Model<a href="#add-other-planets-using-sphere-model" class="hash-link" aria-label="Direct link to Add Other Planets using Sphere Model" title="Direct link to Add Other Planets using Sphere Model">​</a></h2>
 <ol>
 <li>We will use the Sphere 3D Model to create other planets, open the
-&quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Generic Shapes</strong>&quot; tab, select
+&quot;<strong>Asset Panel</strong>&quot; and from the &quot;<strong>3D Model</strong>&quot; tab, select
 and add the &quot;<strong>Sphere</strong>&quot; object to the scene.</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/08-826b32c824cd36875e5891ec484bce63.png" width="1919" height="1079" class="img_ev3q"></p>
@@ -88,10 +88,10 @@ the remaining 8 planets.</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/09-b767e1671cb6e567146c18394864e680.png" width="1919" height="1079" class="img_ev3q"></p>
 <ol start="3">
-<li>Select one of the sphere in the scene and open the &quot;<strong>Configure
-Tool</strong>&quot;, under the Model section set the &quot;<strong>Material</strong>&quot; texture to
+<li>Select one of the sphere in the scene and open the &quot;<strong>Inspector</strong>&quot;,
+under the Model section set the &quot;<strong>Material</strong>&quot; texture to
 the &quot;<strong>earth.jpg</strong>&quot; image in your asset library. Rename the planet
-accordingly in the configure tool. <em>We will use images of different
+accordingly in the Inspector. <em>We will use images of different
 planets to transform the plain sphere object into objects
 representing different planets.</em></li>
 </ol>
@@ -102,7 +102,7 @@ representing different planets.</em></li>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/11-bc0d0c061bcca29fd5669a9f81267099.png" width="1919" height="1079" class="img_ev3q"></p>
 <ol start="5">
 <li>For each planet, we set their scale relative to the Earth using data
-from NASA. Open the &quot;<strong>Configure Tool</strong>&quot; to modify the &quot;<strong>Scale</strong>&quot;
+from NASA. Open the &quot;<strong>Inspector</strong>&quot; to modify the &quot;<strong>Scale</strong>&quot;
 of the planets and use the <strong>transform tools</strong> to reposition them.</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/12-c21481cd68efa0aedb92b6f710dd4f5a.png" width="1919" height="1079" class="img_ev3q"></p>
@@ -118,8 +118,7 @@ orbital and rotational speed data.</em></li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="alt text" src="/XRCC_Tutorial/assets/images/13-805dd16676176a4a2cf2713eda129131.png" width="1919" height="1079" class="img_ev3q"></p>
 <ol start="2">
-<li>Select the &quot;<strong>Show Item Variables</strong>&quot; button to open the item
-variables panel. Add a new variable named &quot;<strong>MecuryOrbitalPeriod</strong>&quot;,
+<li>Select the &quot;<strong>Variables</strong>&quot; button to open the &quot;<strong>Instance Variable Panel</strong>&quot;. Add a new variable named &quot;<strong>MecuryOrbitalPeriod</strong>&quot;,
 set the variable type to &quot;<strong>Number</strong>&quot; and its <strong>default value</strong> to
 0.241.</li>
 </ol>
@@ -201,7 +200,7 @@ sure it&#x27;s <strong>spawned at the origin</strong> (same position as the Sun)
 </li>
 <li>
 <p>Select the &quot;<strong>Empty Object</strong>&quot; and rename it as <strong>mercuryEmpty</strong> in
-the &quot;<strong>Configure Tool</strong>&quot;.</p>
+the &quot;<strong>Inspector</strong>&quot;.</p>
 </li>
 <li>
 <p>Hide the <strong>&quot;Sun&quot;</strong> object in editor.</p>
@@ -317,14 +316,14 @@ it with the <strong>earthEmpty</strong> object.</p>
 </li>
 <li>
 <p>Then copy the <strong>X, Y, Z position</strong> as displayed in the <strong>Earth</strong>&#x27;s
-Configure Tool and set the <strong>Moon&#x27;s X, Y, Z position</strong> to these
+&quot;<strong>Inspector</strong>&quot; and set the <strong>Moon&#x27;s X, Y, Z position</strong> to these
 values. <em>Now the Moon should be completely inside the Earth and
 sharing the same position.</em></p>
 </li>
 <li>
 <p>With the &quot;<strong>Moon</strong>&quot; object still selected, use the &quot;<strong>Offset Tool</strong>&quot;
-or set the Moon&#x27;s X-Axis Offset value to 2 in the &quot;<strong>Configure
-Tool</strong>&quot;. Now the Sphere representing the Moon should be shown
+or set the Moon&#x27;s X-Axis Offset value to 2 in the &quot;<strong>Inspector</strong>&quot;.
+Now the Sphere representing the Moon should be shown
 outside of the Earth object, but its centre still overlaps with the
 Earth object.</p>
 </li>
@@ -347,13 +346,13 @@ orbiting movement of the Moon sphere model.</em></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-the-welcome-text">Add the Welcome Text<a href="#add-the-welcome-text" class="hash-link" aria-label="Direct link to Add the Welcome Text" title="Direct link to Add the Welcome Text">​</a></h2>
 <ol>
 <li>
-<p>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Specialize Objects</strong>&quot;
-tab, select and add the &quot;<strong>Text Object</strong>&quot; to the scene to create a
+<p>Open the &quot;<strong>Asset Panel</strong>&quot; and from the &quot;<strong>Special Objects</strong>&quot;
+tab, select and add the &quot;<strong>Text</strong>&quot; to the scene to create a
 Welcome Textbox.</p>
 </li>
 <li>
 <p>Use the <strong>transform tools</strong> (move / rotate / scale) to reposition
-the text object. Then open the &quot;<strong>Configure Tool</strong>&quot; to set up the
+the text object. Then open the &quot;<strong>Inspector</strong>&quot; to set up the
 text content, font size, and colour of the text object.</p>
 </li>
 </ol>
@@ -372,42 +371,42 @@ to create a new scene.</p>
 to</strong>&quot; to open the new Mercury Scene.</p>
 </li>
 <li>
-<p>In the Mercury Scene, open the &quot;<strong>New Item Panel</strong>&quot; and add a
-&quot;<strong>Ground</strong>&quot; object to the scene.</p>
+<p>In the Mercury Scene, open the &quot;<strong>Asset Panel</strong>&quot; and add a
+&quot;<strong>Ground</strong>&quot; to the scene.</p>
 </li>
 <li>
 <p>Modifying the &quot;<strong>Scale</strong>&quot; of the Ground object using either the
-<strong>transform tools</strong> or directly in the &quot;<strong>Configure Tool</strong>&quot;. <em>We
+<strong>transform tools</strong> or directly in the &quot;<strong>Inspector</strong>&quot;. <em>We
 want to have a large enough area for the player to move around.</em></p>
 </li>
 <li>
-<p>Add a &quot;<strong>2D Image Object</strong>&quot; to the scene. <em>We will be using this 2D
-Image Object to simulate the appearance of Mercury in the scene.</em></p>
+<p>Add a &quot;<strong>2D Image</strong>&quot; to the scene. <em>We will be using this 2D
+Image to simulate the appearance of Mercury in the scene.</em></p>
 </li>
 <li>
-<p>Open the &quot;<strong>Configure Tool</strong>&quot; and modify the &quot;<strong>Scale</strong>&quot; of the 2D
-Image Object so it&#x27;s in similar size as the Ground object. Then,
-click the selector next to the &quot;<strong>Image Asset</strong>&quot; option to open the
-Selection panel and select the &quot;<strong>mercury.jpg</strong>&quot; image in your asset
+<p>Open the &quot;<strong>Inspector</strong>&quot; and modify the &quot;<strong>Scale</strong>&quot; of the 2D
+Image so it&#x27;s in similar size as the Ground. Then,
+click the selector next to the &quot;<strong>Choose Image</strong>&quot; option to open the
+Asset Selection Panel and select the &quot;<strong>mercury.jpg</strong>&quot; image in your asset
 library to simulate mercury&#x27;s ground appearance. <em>This is the same
 image used for the Sphere of Mercury planet, but shown in 2D format
 instead.</em></p>
 </li>
 <li>
 <p>Click at any empty space in the scene to select the <strong>Scene</strong> and
-open its &quot;<strong>Configure Tool</strong>&quot;. Here we use the same
+open its &quot;<strong>Inspector</strong>&quot;. Here we use the same
 &quot;<strong>stars_milky.jpg</strong>&quot; in your asset library to set the skybox 360
 image.</p>
 </li>
 <li>
-<p>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Imported Assets</strong>&quot;
-tab, select and add the 3 &quot;<strong>rock</strong>&quot; objects to the scene. Use the
+<p>Open the &quot;<strong>Asset Panel</strong>&quot; and press the &quot;<strong>Imported Assets</strong>&quot;
+button, select and add the 3 &quot;<strong>rock</strong>&quot; objects to the scene. Use the
 <strong>transform tools</strong> (move / rotate / scale) to adjust the size and
 position of the rock objects.</p>
 </li>
 <li>
-<p>Select one of the rock object and open its &quot;<strong>Configure Tool</strong>&quot;.
-Make sure both the &quot;<strong>Interactable</strong>&quot; and &quot;<strong>Grabbable</strong>&quot; options
+<p>Select one of the rock object and open its &quot;**Inspector **&quot;.
+Make sure both the &quot;<strong>Interactable</strong>&quot;, &quot;<strong>Grabbable</strong>&quot; and &quot;<strong>Collider</strong>&quot; options
 are selected. Then, &quot;<strong>Enable</strong>&quot; the Physics setting as well as the
 &quot;<strong>Use Gravity</strong>&quot; option . Repeat these procedures for the other
 rock objects.</p>
@@ -432,7 +431,7 @@ scene.</p>
 <p>Since the &quot;Use Gravity&quot; option simulates the Earth gravity, we want
 to turn off the earth gravity and simulate the Mercury gravity using
 Physics behaviour blocks. Before setting the behaviour flow, first
-open the rocks&#x27; Configure Tool and <strong>deselect &quot;Use Gravity&quot;</strong> under
+open the rocks&#x27; &quot;<strong>Inspector</strong>&quot; and <strong>deselect &quot;Use Gravity&quot;</strong> under
 Physics setting <strong>while leaving Physics &quot;Enabled&quot;</strong>.</p>
 </li>
 <li>
@@ -468,21 +467,21 @@ to the other two rock objects.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="add-welcome-text-and-return-button-when-clicked">Add Welcome Text and Return Button when Clicked<a href="#add-welcome-text-and-return-button-when-clicked" class="hash-link" aria-label="Direct link to Add Welcome Text and Return Button when Clicked" title="Direct link to Add Welcome Text and Return Button when Clicked">​</a></h2>
 <ol>
 <li>
-<p>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Specialized Objects</strong>&quot;
-tab, select and add the &quot;<strong>Text Object</strong>&quot; to the scene.</p>
+<p>Open the &quot;<strong>Asset Panel</strong>&quot; and from the &quot;<strong>Special Objects</strong>&quot;
+tab, select and add the &quot;<strong>Text</strong>&quot; to the scene.</p>
 </li>
 <li>
 <p>Use the <strong>transform tools</strong> (move / rotate / scale) to reposition
-the text object. Then open the &quot;<strong>Configure Tool</strong>&quot; to set up the
-text content, font size, and colour of the text object.</p>
+the text. Then open the &quot;<strong>Inspector</strong>&quot; to set up the
+text content, font size, and colour of the text.</p>
 </li>
 <li>
-<p>Open the &quot;<strong>New Item Panel</strong>&quot; and from the &quot;<strong>Specialized Objects</strong>&quot;
-tab, select and add the &quot;<strong>Text Object</strong>&quot; to the scene.</p>
+<p>Open the &quot;<strong>Asset Panel</strong>&quot; and from the &quot;<strong>Special Objects</strong>&quot;
+tab, select and add the &quot;<strong>Button</strong>&quot; to the scene.</p>
 </li>
 <li>
 <p>Use the <strong>transform tools</strong> (move / rotate / scale) to reposition
-the button object. Then open the &quot;<strong>Configure Tool</strong>&quot; to set up the
+the button. Then open the &quot;<strong>Inspector</strong>&quot; to set up the
 text content, font size, and colour of the button object.</p>
 </li>
 <li>
@@ -501,9 +500,9 @@ block and the &quot;<strong>Change Scene</strong>&quot; block. <em>When this act
 the scene will be changed back to the Solar System.</em></p>
 </li>
 <li>
-<p>Select the &quot;<strong>Button Object</strong>&quot; and open its &quot;<strong>Configure Tool</strong>&quot;
-scroll down to select the &quot;<strong>Action</strong>&quot; option for the button. On the
-selection panel, select the button object from the item list on the
+<p>Select the &quot;<strong>Button</strong>&quot; and open its &quot;<strong>Inspector</strong>&quot;
+select the &quot;<strong>Action</strong>&quot; option for the button at &quot;<strong>Action</strong>&quot; tab. On the
+&quot;<strong>Select Instance Panel</strong>&quot;, select the button object from the item list on the
 left side, then choose the &quot;<strong>return</strong>&quot; action on the right and
 select the action. <em>This will set up the &quot;Click here to return solar
 system&quot; button object to call the &quot;return&quot; action to change back to
@@ -546,10 +545,10 @@ outline when the Wand stops pointing at it.</em></p>
 flows to the other two rock objects.</p>
 </li>
 <li>
-<p><strong>Deselect any objects</strong> in the scene and open the &quot;<strong>Configure
-Tool</strong>&quot; to configure the scene settings. Select &quot;<strong>Wand</strong>&quot; as the
+<p>Select &quot;<strong>User Setting</strong>&quot; in the scene and open the &quot;<strong>Inspector</strong>&quot;
+to configure the scene settings. Select &quot;<strong>Wand</strong>&quot; as the
 &quot;<strong>Default Tool</strong>&quot;. This sets the Wand tool as the default
-interaction tool in XR mode. Then change the &quot;<strong>Wand Length</strong>&quot; into
+interaction tool in XR mode. Then change the &quot;<strong>Interaction Scope (Wand Length)</strong>&quot; into
 &quot;<strong>10</strong>&quot;.</p>
 </li>
 <li>
@@ -598,8 +597,8 @@ and all objects configured in the scene. Rename the scene to Venus
 then double click the Venus scene to enter.</p>
 </li>
 <li>
-<p>Select the text object in the Venus scene and edit its Text content
-using the &quot;<strong>Configure Tool</strong>&quot;, change the planet name from Mercury
+<p>Select the text in the Venus scene and edit its Text content
+using the &quot;<strong>Inspector</strong>&quot;, change the planet name from Mercury
 to Venus.</p>
 </li>
 <li>
