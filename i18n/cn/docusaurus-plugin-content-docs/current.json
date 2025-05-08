@@ -1,0 +1,166 @@
+{
+  "version.label": {
+    "message": "最新版本",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Workspace": {
+    "message": "Workspace",
+    "description": "The label for category Workspace in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Project Management": {
+    "message": "Project Management",
+    "description": "The label for category Project Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Scene Management": {
+    "message": "Scene Management",
+    "description": "The label for category Scene Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Assets Management": {
+    "message": "Assets Management",
+    "description": "The label for category Assets Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Create the Scene using Objects": {
+    "message": "Create the Scene using Objects",
+    "description": "The label for category Create the Scene using Objects in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Behaviour Management": {
+    "message": "Behaviour Management",
+    "description": "The label for category Behaviour Management in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Multi-User Networked Editing": {
+    "message": "Multi-User Networked Editing",
+    "description": "The label for category Multi-User Networked Editing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Appendix A-Shortcut": {
+    "message": "Appendix A-Shortcut",
+    "description": "The label for category Appendix A-Shortcut in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Appendix B-Configure Entity in VotanicXR": {
+    "message": "Appendix B-Configure Entity in VotanicXR",
+    "description": "The label for category Appendix B-Configure Entity in VotanicXR in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.BehaviourOverview": {
+    "message": "BehaviourOverview",
+    "description": "The label for category BehaviourOverview in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.BehaviourOverview": {
+    "message": "BehaviourOverview",
+    "description": "The label for category BehaviourOverview in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Temp": {
+    "message": "Temp",
+    "description": "The label for category Temp in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GeneralGuide": {
+    "message": "GeneralGuide",
+    "description": "The label for category GeneralGuide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Overview": {
+    "message": "Overview",
+    "description": "The label for category Overview in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Installation Guide": {
+    "message": "Installation Guide",
+    "description": "The label for category Installation Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Basic Usage": {
+    "message": "Basic Usage",
+    "description": "The label for category Basic Usage in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Appendix C -- VR headset troubleshooting": {
+    "message": "Appendix C -- VR headset troubleshooting",
+    "description": "The label for category Appendix C -- VR headset troubleshooting in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.PCMode": {
+    "message": "PCMode",
+    "description": "The label for category PCMode in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.XRMode": {
+    "message": "XRMode",
+    "description": "The label for category XRMode in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Edit Mode": {
+    "message": "Edit Mode",
+    "description": "The label for category Edit Mode in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Play Session": {
+    "message": "Play Session",
+    "description": "The label for category Play Session in sidebar tutorialSidebar"
+  },
+  "sidebar.xrSidebar.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar xrSidebar"
+  },
+  "sidebar.xrSidebar.category.Edit Mode": {
+    "message": "Edit Mode",
+    "description": "The label for category Edit Mode in sidebar xrSidebar"
+  },
+  "sidebar.xrSidebar.category.Play Session": {
+    "message": "Play Session",
+    "description": "The label for category Play Session in sidebar xrSidebar"
+  },
+  "sidebar.pcSidebar.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Workspace": {
+    "message": "Workspace",
+    "description": "The label for category Workspace in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Project Management": {
+    "message": "Project Management",
+    "description": "The label for category Project Management in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Scene Management": {
+    "message": "Scene Management",
+    "description": "The label for category Scene Management in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Assets Management": {
+    "message": "Assets Management",
+    "description": "The label for category Assets Management in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Create the Scene using Objects": {
+    "message": "Create the Scene using Objects",
+    "description": "The label for category Create the Scene using Objects in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Behaviour Management": {
+    "message": "Behaviour Management",
+    "description": "The label for category Behaviour Management in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Multi-User Networked Editing": {
+    "message": "Multi-User Networked Editing",
+    "description": "The label for category Multi-User Networked Editing in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Appendix A-Shortcut": {
+    "message": "Appendix A-Shortcut",
+    "description": "The label for category Appendix A-Shortcut in sidebar pcSidebar"
+  },
+  "sidebar.pcSidebar.category.Appendix B-Configure Entity in VotanicXR": {
+    "message": "Appendix B-Configure Entity in VotanicXR",
+    "description": "The label for category Appendix B-Configure Entity in VotanicXR in sidebar pcSidebar"
+  },
+  "sidebar.generalGuideSidebar.category.Overview": {
+    "message": "Overview",
+    "description": "The label for category Overview in sidebar generalGuideSidebar"
+  },
+  "sidebar.generalGuideSidebar.category.Installation Guide": {
+    "message": "Installation Guide",
+    "description": "The label for category Installation Guide in sidebar generalGuideSidebar"
+  },
+  "sidebar.generalGuideSidebar.category.Basic Usage": {
+    "message": "Basic Usage",
+    "description": "The label for category Basic Usage in sidebar generalGuideSidebar"
+  },
+  "sidebar.generalGuideSidebar.category.Appendix C -- VR headset troubleshooting": {
+    "message": "Appendix C -- VR headset troubleshooting",
+    "description": "The label for category Appendix C -- VR headset troubleshooting in sidebar generalGuideSidebar"
+  },
+  "sidebar.behaviourOverviewSidebar.category.Temp": {
+    "message": "Temp",
+    "description": "The label for category Temp in sidebar behaviourOverviewSidebar"
+  }
+}
