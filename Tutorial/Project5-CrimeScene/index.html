@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Tutorial/Project5-CrimeScene" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.5.2">
+<title data-rh="true">XRCC Tutorial - Crime Scene | XRCC Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://votanic.github.io/XRCC_Tutorial/img/XRCCMiniLogo.png"><meta data-rh="true" name="twitter:image" content="https://votanic.github.io/XRCC_Tutorial/img/XRCCMiniLogo.png"><meta data-rh="true" property="og:url" content="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project5-CrimeScene"><meta data-rh="true" property="og:locale" content="en_GB"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="XRCC Tutorial - Crime Scene | XRCC Documentation"><meta data-rh="true" name="description" content="Overview"><meta data-rh="true" property="og:description" content="Overview"><link data-rh="true" rel="icon" href="/XRCC_Tutorial/img/XRCCMiniLogo.png"><link data-rh="true" rel="canonical" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project5-CrimeScene"><link data-rh="true" rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project5-CrimeScene" hreflang="en-GB"><link data-rh="true" rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/Tutorial/Project5-CrimeScene" hreflang="x-default"><link rel="stylesheet" href="/XRCC_Tutorial/assets/css/styles.71c8491b.css">
+<script src="/XRCC_Tutorial/assets/js/runtime~main.ab57eaf7.js" defer="defer"></script>
+<script src="/XRCC_Tutorial/assets/js/main.aed194e3.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/XRCC_Tutorial/"><div class="navbar__logo"><img src="/XRCC_Tutorial/img/Icon/XRCCLogoLight.svg" alt="Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/XRCC_Tutorial/img/Icon/XRCCLogoDark.svg" alt="Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/GeneralGuide/Overview/">General Guide</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/PCMode/Introduction/">PC Mode</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/XRMode/Introduction/">XR Mode</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/BehaviourOverview/Introduction">Behaviour</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/XRCC_Tutorial/Tutorial/Introduction">Tutorial</a><a class="navbar__item navbar__link" href="/XRCC_Tutorial/FAQ/">Support</a></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input"><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="navbar__item header-separater"> </div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Introduction">Introduction</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Fundamentals">XRCC Tutorial - Fundamentals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Project1-Museum">Project 1 - Museum</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Project2-SolarSystem">Project 2 - Solar System</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Project3-Pinball">Project 3 - Pinball</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/Project4-CookAndServe">Project 4 - Cook and Serve</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/XRCC_Tutorial/Tutorial/Project5-CrimeScene">Project 5 - Crime Scene</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/AnimalBuster Part 1 - Create a Slingshot">AnimalBuster Part 1 - Create a Slingshot</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/AnimalBuster Part 2 - Create a Bullet">AnimalBuster Part 2 - Create a Bullet</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/XRCC_Tutorial/Tutorial/AnimalBuster Part 3 - Create Enemy and Building">AnimalBuster Part 3 - Create Enemy and Buildings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href="https://www.youtube.com/playlist?list=PLcEOBnmWXd3ljgBpkI8pD_5yY1nYTvlZB" target="_blank" rel="noopener noreferrer" class="menu__link menuExternalLink_NmtK">Video Tutorial Playlist<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/XRCC_Tutorial/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Project 5 - Crime Scene</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>XRCC Tutorial - Crime Scene</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview">​</a></h2>
+<p>In this tutorial, we&#x27;ll guide you through on how to build a mini crime mystery VR experience, where we&#x27;ll have the player hold a camera, find and take pictures of some evidence in order to reconstruct the events happened at the scene.</p>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/thumbnail-fc6fee6add30311641e029b57c912e07.png" width="1919" height="963" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Warning: Photosensitive seizure</div><div class="admonitionContent_BuS1"><p>This tutorial project contains visual effects, including flashing lights and rapid changes in brightness, which may trigger photosensitive epilepsy in some individuals.</p><p>If you are sensitive to flashing lights or have a history of seizures, please proceed with caution.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="techniques-covered">Techniques Covered<a href="#techniques-covered" class="hash-link" aria-label="Direct link to Techniques Covered" title="Direct link to Techniques Covered">​</a></h3>
+<p>What you&#x27;ll learn after this tutorial:</p>
+<ul>
+<li>How to make and equip handheld tool in XRCC</li>
+<li>How to use start / end contact to simulate ray cast from camera</li>
+<li>How to use sound, image and light objects in XRCC to enhance storytelling</li>
+<li>How to use string operation to build simple UI in XRCC</li>
+</ul>
+<p><em><strong>Advanced challenge</strong></em>:</p>
+<ul>
+<li>How to create a police siren light with sine function</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="resources-download">Resources Download<a href="#resources-download" class="hash-link" aria-label="Direct link to Resources Download" title="Direct link to Resources Download">​</a></h3>
+<p>You can download the project files for this tutorial in two formats: a starter project for step-by-step guidance and a completed project for your reference.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Download Project</div><div class="admonitionContent_BuS1"><p><a href="https://votanic-my.sharepoint.com/:f:/p/tobey/EqMFLFlydzlEgcbkXOfRxdkBKfJ7cZSoFflcIqT81wHnzQ?e=3YRNfM" target="_blank" rel="noopener noreferrer">Download Project Files for the Crime Scene Tutorial</a></p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="planning-what-youll-build">Planning: What You&#x27;ll Build<a href="#planning-what-youll-build" class="hash-link" aria-label="Direct link to Planning: What You&#x27;ll Build" title="Direct link to Planning: What You&#x27;ll Build">​</a></h3>
+<p>This tutorial will guide you through building a game that:</p>
+<ol>
+<li>Drops the player into a crime scene.</li>
+<li>Asks them to take photos of all evidences using a camera.</li>
+<li>Pieces together a coherent story.</li>
+</ol>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Tips</div><div class="admonitionContent_BuS1"><p>You are encouraged to make adjustments to the project as you see fit — part of the fun in game-making is bringing your unique concepts to life!</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-set-up-the-camera">Step 1: Set Up the Camera<a href="#step-1-set-up-the-camera" class="hash-link" aria-label="Direct link to Step 1: Set Up the Camera" title="Direct link to Step 1: Set Up the Camera">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="add-the-flash-visual-effect">Add the Flash Visual Effect<a href="#add-the-flash-visual-effect" class="hash-link" aria-label="Direct link to Add the Flash Visual Effect" title="Direct link to Add the Flash Visual Effect">​</a></h3>
+<p>We know that a real life camera flashes briefly when taking a photo. In XRCC, we can achieve this by turning the camera on, adding a small delay, and then turning it off.</p>
+<ol>
+<li>Select <strong>Camera &gt; Flashlight</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/1-6419710923e6d6b379fc1cfe41970fbc.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Switch to the <strong>Behavior</strong> tab.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/47-2b0cf83239f7d0c2077074e55fb8a135.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>Go to <strong>Groups</strong> then click <strong>&quot;+&quot;</strong> icon to add new behavior group.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/48-226bb61bb47133cce7da5a5011adf4ce.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="4">
+<li>For the new behavior group, set <strong>Toggle Action</strong> to true and rename it as <strong>Flash</strong>. We have just added a <strong>Flash</strong> action to the camera flashlight. Then, implement the flash logic with the following nodes:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/2-12a9601c7f67e18af2ca0149f2a7ce0f.png" width="1918" height="462" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="equip-the-camera">Equip the Camera<a href="#equip-the-camera" class="hash-link" aria-label="Direct link to Equip the Camera" title="Direct link to Equip the Camera">​</a></h3>
+<p>To allow the player to hold the camera and take pictures, we need to utilize the <strong>Equip</strong> node in XRCC.</p>
+<ol>
+<li>Click on the sky so that your inspector now focuses on the <strong>Main</strong> scene.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/3-eeec0ce03691bfc17ce80ccd60285059.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Switch to the <strong>Behavior</strong> tab<!-- -->
+<ul>
+<li>Implement the equip camera logic with the following nodes:<!-- -->
+<ul>
+<li><em>Start -&gt; Show Tool (enable=false) -&gt; Equip (position=vector3(-.0635, .04, -.01), targetEntity=RightHand, targetItem=Camera)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/4-323f05916e27b9a6507c37d2bfbb0501.png" width="1917" height="545" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Checkpoint</div><div class="admonitionContent_BuS1"><p>Run your project. Check that:</p><ul>
+<li>The camera mesh is equipped to your hand in XRCC.</li>
+</ul><p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/checkpoint1-c986473f214a86d99d566a21058222cf.gif" width="800" height="450" class="img_ev3q"></p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Tips</div><div class="admonitionContent_BuS1"><p>It is a good practice to run your project once in a while to check if you have done anything wrong, so that you can fix it now rather than later.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-set-up-the-clipboard-and-ui">Step 2: Set Up the Clipboard and UI<a href="#step-2-set-up-the-clipboard-and-ui" class="hash-link" aria-label="Direct link to Step 2: Set Up the Clipboard and UI" title="Direct link to Step 2: Set Up the Clipboard and UI">​</a></h2>
+<p>After setting up the camera, it&#x27;d be nice if our game has a way to tell the player how many remaining photos that still need to be taken in the crime scene.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="add-the-clipboard-mesh">Add the Clipboard Mesh<a href="#add-the-clipboard-mesh" class="hash-link" aria-label="Direct link to Add the Clipboard Mesh" title="Direct link to Add the Clipboard Mesh">​</a></h3>
+<ol>
+<li>Open the <strong>Asset Panel</strong> and select the clipboard mesh at <strong>3D Model &gt; clipboard.fbx</strong>, then click <strong>Add Asset</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/5-cf69d3dea4a19e8fe67f5098cf243fa1.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Select the <strong>clipboard</strong> mesh, click the <em>link</em> icon, then hover your cursor to <strong>Stand</strong> and left-click to parent the <strong>clipboard</strong> mesh under <strong>Stand</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/49-7c1cc7da68a7a94bf5892f79c425176d.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>Adjust the clipboard mesh to top of the <strong>Stand</strong>, as long as it&#x27;s at a place where the player can see the clipboard clearly, it&#x27;ll be fine. In the picture below, we have set the clipboard&#x27;s position to <strong>(0, 0.5, -0.3)</strong>, rotation to <strong>(0, 0, 0)</strong>, scale to <strong>(1.5, 0.45, 1.5)</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/6-8d99e207b7cd5832c96bb63873eb3768.png" width="1920" height="1080" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="display-number-of-remaining-photos">Display Number of Remaining Photos<a href="#display-number-of-remaining-photos" class="hash-link" aria-label="Direct link to Display Number of Remaining Photos" title="Direct link to Display Number of Remaining Photos">​</a></h3>
+<ol>
+<li>Click on the sky so that your inspector now focuses on the <em>Main</em> scene. Then:<!-- -->
+<ul>
+<li>Switch to <strong>Behavior</strong> tab.</li>
+<li>Open up <strong>Variable</strong> panel at the top-left corner of canvas. Click on <strong>Add Variable</strong> to add a number variable then rename it as <strong>Remaining</strong>. For this project, we will have 3 pieces of evidence so set its default value to <strong>3</strong>.</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/7-18f913b8cc7597e7f58d1fc7abb39a8b.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Add two text objects into the scene and parent them both to the clipboard mesh <strong>clipboard.fbx</strong>. Rename one as <strong>Remaining</strong> and another as <strong>Label</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/8-de1e844ab0e0d6d670aee705653d93d6.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>
+<p>Set <strong>Label</strong> text object&#x27;s text to <strong>&quot;Photo(s) Left&quot;</strong>, font size to <strong>5</strong>. Set <strong>Remaining</strong> text object&#x27;s text to <strong>&quot;0&quot;</strong>, font size to <strong>40</strong>.</p>
+</li>
+<li>
+<p>Adjust the two text objects to align with the clipboard. Any alignment of the two text objects would be fine as long as they look like writings on the clipboard.</p>
+<ul>
+<li>In the picture below, we have set:<!-- -->
+<ul>
+<li><strong>Remaining</strong> text object - position to <strong>(0, 0.0600, 0.2)</strong>, rotation to <strong>(270, 0, 0)</strong>, scale to <strong>(2.2222, 2.2222)</strong>.</li>
+<li><strong>Label</strong> text object - position to <strong>(0, 0.0600, 0.5750)</strong>, rotation to <strong>(270, 0, 0)</strong>, scale to <strong>(2.2222, 2.2222)</strong>.</li>
+</ul>
+</li>
+<li>Feel free to style the font to your likings.</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/9-365b40e2504a1e894c3707f816161179.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="4">
+<li>Select <strong>Remaining</strong> text label in the scene and open up its <strong>Behavior</strong> tab. Implement the number display logic with the following nodes:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/10-f8e4bd95e3c2cbc22486ab9304614361.png" width="1378" height="291" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Checkpoint</div><div class="admonitionContent_BuS1"><p>Run your project. Check that:</p><ul>
+<li>The clipboard displays the number of remaining photos.</li>
+</ul><p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/checkpoint2-48fe20df1395e01415dc96e1309d49a8.png" width="1920" height="1080" class="img_ev3q"></p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="display-number-of-remaining-photos-ui-screen-alternative-approach">Display Number of Remaining Photos (UI Screen Alternative Approach)<a href="#display-number-of-remaining-photos-ui-screen-alternative-approach" class="hash-link" aria-label="Direct link to Display Number of Remaining Photos (UI Screen Alternative Approach)" title="Direct link to Display Number of Remaining Photos (UI Screen Alternative Approach)">​</a></h3>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>This section is an alternative approach that utilizes the UI Screen instead of the clipboard to display the number of remaining photos.</p><p><strong>This is an optional route.</strong></p></div></div>
+<ol start="5">
+<li>(Optional) Add a 2D text object in the scene and set its size as <strong>15</strong>. Rename it as <strong>Remaining Text</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/optional1-4f5e4aaeb10771cad7dad6c5a2725707.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="6">
+<li>(Optional) Open its <strong>Behavior</strong> tab. Implement the following nodes:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/optional2-0b71bef35435ae95413146ea0d5b79ae.png" width="1400" height="374" class="img_ev3q"></p>
+<ol start="7">
+<li>(Optional) Go back to the scene and switch to <strong>Entity</strong> tab. Then tick <strong>UI Screen</strong> to enable the UI entity.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/optional3-769590d33c59e4d520c11f64bd5a26b9.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="8">
+<li>(Optional) Switch back to <strong>Item</strong> tab. Parent <strong>Remaining Text</strong> under <strong>UI Screen</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/optional4-7bd12381d4b99197a3dfd345855259e9.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="9">
+<li>(Optional) For <strong>Remaining Text</strong>, adjust its position, rotation and scale so that when we run the game, the player can see the UI text on the screen.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/optional5-beabc653bdb713e38f69cb8594e4b9e1.png" width="1920" height="1080" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Checkpoint (Optional)</div><div class="admonitionContent_BuS1"><p>If you have chose to use the UI screen approach, check that:</p><ul>
+<li>You can see the UI text on the top right corner of your game.</li>
+</ul><p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/optional_checkpoint-304f31d6c76689059c1ce32fa6f6c525.gif" width="640" height="360" class="img_ev3q"></p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-set-up-the-evidence">Step 3: Set Up the Evidence<a href="#step-3-set-up-the-evidence" class="hash-link" aria-label="Direct link to Step 3: Set Up the Evidence" title="Direct link to Step 3: Set Up the Evidence">​</a></h2>
+<p>We have provided 3 evidence items in the crime scene. Let’s implement these so players can interact with them.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="add-the-pointer-mesh">Add the Pointer Mesh<a href="#add-the-pointer-mesh" class="hash-link" aria-label="Direct link to Add the Pointer Mesh" title="Direct link to Add the Pointer Mesh">​</a></h3>
+<ol>
+<li>Open <strong>Asset Panel &gt; Special Objects</strong>. Then add an <strong>Empty Cube</strong> into the scene and rename it as <strong>Pointer</strong>. This object will act as a ray for the camera.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/11-3f111450003f8b2b751586d09c84a3ed.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Parent <strong>Pointer</strong> under the <strong>Camera</strong> mesh. Set <strong>Pointer</strong>&#x27;s position to <strong>(0, 0, 0.1)</strong>, rotation to <strong>(0, 0, 0)</strong>, scale to <strong>(0.02, 0.02, 200)</strong>, offset to <strong>(0, 0, 0.5)</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/12-2d7aeaa2f3f7ed048ac4043d418abe82.png" width="1920" height="1080" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implement-the-collision-check">Implement the Collision Check<a href="#implement-the-collision-check" class="hash-link" aria-label="Direct link to Implement the Collision Check" title="Direct link to Implement the Collision Check">​</a></h3>
+<p>One of the evidence items will be the huge train in the scene. By utilizing the contact triggers in XRCC, we can know when the player is pointing their camera toward the train.</p>
+<ol>
+<li>Select the <strong>Train</strong> in the scene.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/13-e5ef058986a865d996ac497b5995e352.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Open the train&#x27;s <strong>Behavior</strong> tab. Create a <strong>Pointing</strong> boolean variable and set its default value to <strong>false</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/14-cdaae73cc7b35eab528e722cda51fae5.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>Add a new <strong>Behavior Group</strong> (Toggle action to false) and rename it to <strong>CollisionCheck</strong>.<!-- -->
+<ul>
+<li>Implement the collision check logic with the following node:</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/15-8ecab54219ed112d5e2a59fa29441356.png" width="1920" height="1080" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Remember to set the target of both <strong>Start Contact</strong> and <strong>Stop Contact</strong> as <strong>Pointer</strong>.</p></div></div>
+<ol start="4">
+<li>Let&#x27;s add an outline to the object when <strong>Pointing</strong> is true. Switch to <strong>Main Behavior Group</strong> of the same object. Implement the logic as shown in the picture below:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/16-3ea1c31fd9b0a617d5a89c483e47c908.png" width="898" height="550" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implement-the-capture-behavior">Implement the Capture Behavior<a href="#implement-the-capture-behavior" class="hash-link" aria-label="Direct link to Implement the Capture Behavior" title="Direct link to Implement the Capture Behavior">​</a></h3>
+<ol>
+<li>Select the <strong>Train</strong> and open the <strong>Behavior</strong> tab. Create a new <strong>Captured</strong> boolean variable and set its default value to <strong>false</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/17-34e36448ec4f5f9460a9a8ed472722ce.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Add a new <strong>Behavior Group</strong> and rename it as <strong>Capture</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/18-5b57878b28f1495a9380afc9826bfad0.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>When the player points their camera to an evidence item that has not been captured yet, we will allow them to take a picture of it. Switch to <strong>Capture Behavior Group</strong> and implement this logic:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/19-cad5bbcc9543b7c0ca40d049452eab87.png" width="1431" height="493" class="img_ev3q"></p>
+<ol start="4">
+<li>When the player has not captured an evidence yet, we want to highlight them to give them a hint. Switch to <strong>Main Behavior Group</strong> and implement this logic:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/20-ad50de8c66b9dd261c39e270175b4cac.png" width="1392" height="769" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Checkpoint</div><div class="admonitionContent_BuS1"><p>Run your project. Check that:</p><ul>
+<li>The evidence is outlined when camera points to them.</li>
+</ul><p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/checkpoint3-735d335ee556b2157f8f36d640cab800.gif" width="640" height="360" class="img_ev3q"></p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-combine-everything">Step 4: Combine Everything<a href="#step-4-combine-everything" class="hash-link" aria-label="Direct link to Step 4: Combine Everything" title="Direct link to Step 4: Combine Everything">​</a></h2>
+<p>At this stage, the only thing left to do is to combine every key components to finish our game.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="add-sound-effect">Add Sound Effect<a href="#add-sound-effect" class="hash-link" aria-label="Direct link to Add Sound Effect" title="Direct link to Add Sound Effect">​</a></h3>
+<p>Add in the right sound effect can make the camera in our VR game feels a lot more lively.</p>
+<ol>
+<li>Select <strong>Train</strong> in the scene and open its <strong>Behavior</strong> tab. Switch to <strong>CollisionCheck Behavior Group</strong> and implement the logic shown in picture below.</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Set both the loop and spatial fields of <strong>Play Sound</strong> node to <strong>False</strong>.</p></div></div>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/21-ab48971376855edb7464f00ba0ada9c0.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>For the <strong>Play Sound</strong> node, click on the magnifying glass icon then select the <strong>camera_focus.wav</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/22-96dee1bafc149bb7644ce5052390bfa3.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>Switch to <strong>Capture Behavior Group</strong> and add <strong>Play Sound</strong> to the end of our previous behavior.</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Set both the loop and spatial fields of <strong>Play Sound</strong> node to <strong>False</strong>.</p></div></div>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/23-c74b13c909ce56be77f249e25b276eea.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="4">
+<li>For this <strong>Play Sound</strong> node, click on the magnifying glass icon then select the <strong>camera_capture.wav</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/24-4e19a16acc3bf5afaf862cdec3cfdbc4.png" width="1920" height="1080" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="call-the-camera-flash">Call the Camera Flash<a href="#call-the-camera-flash" class="hash-link" aria-label="Direct link to Call the Camera Flash" title="Direct link to Call the Camera Flash">​</a></h3>
+<ol>
+<li>At <strong>Capture Behavior Group</strong>, add a <strong>Call Action</strong> node after the <strong>Player Sound</strong> node.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/25-498825319dc1e4cf9756da8b32f18059.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>For the <strong>Call Action</strong> node, select <strong>Flash</strong> action under <strong>Flashlight</strong>. Then click <strong>Select Item</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/26-5a48a96257940810381be4091ff26ba6.png" width="1920" height="1080" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="show-the-evidence-tag">Show the Evidence Tag<a href="#show-the-evidence-tag" class="hash-link" aria-label="Direct link to Show the Evidence Tag" title="Direct link to Show the Evidence Tag">​</a></h3>
+<p>To remind the player that they&#x27;ve taken the photo of an evidence, we will place a tag in front of it.</p>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/tag-763e318a911c88a9a0cfacf47f06fa66.png" width="610" height="610" class="img_ev3q"></p>
+<ol>
+<li>At <strong>Capture Behavior Group</strong>, add another <strong>Call Action</strong> node after our previous behavior.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/27-a390479040d52421c2893921e250b65f.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>For the <strong>Call Action</strong> node, select <strong>Show</strong> action under <strong>Tag 3</strong>. Then click <strong>Select Item</strong>.</li>
+</ol>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>For this tutorial, we have positioned the train to use <strong>Tag 3</strong> in advance.</p></div></div>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/28-f60a60db1d119fadf7c169172af42a82.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>We also have to subtract the remaining number of evidence by 1 when player captures a photo. Implement the logic shown below to update the number:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/29-67d9648765ae31745ce70557fab1f7c0.png" width="1920" height="1080" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Checkpoint</div><div class="admonitionContent_BuS1"><p>Run your project. If you have followed the instructions correctly, you should be able to:</p><ul>
+<li>Point your camera to the train and <em>(left click to)</em> take a photo</li>
+<li>Hear camera focus and capture sound effect <em>(You&#x27;ll need to plug in an earphone to test this)</em></li>
+<li>See a tag appears after you&#x27;ve taken the photo</li>
+<li>See the remaining number of evidence has been updated on clipboard</li>
+</ul><p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/checkpoint4-6795e8a9b97713972989f431bf474b1e.gif" width="640" height="360" class="img_ev3q"></p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="show-images-on-camera-screen">Show Images on Camera Screen<a href="#show-images-on-camera-screen" class="hash-link" aria-label="Direct link to Show Images on Camera Screen" title="Direct link to Show Images on Camera Screen">​</a></h3>
+<p>Up until now, our camera doesn&#x27;t really show anything on its screen. We can utilize <strong>Set Image</strong> node to display the result image on the camera screen.</p>
+<ol>
+<li>Select <strong>Camera &gt; Image</strong> in scene.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/30-1cf15206d5157e2bf7ea85e4f9b71565.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Open up the <strong>Behavior</strong> tab. Since building this part of the game is a bit redundant, you&#x27;ll see that we have already prepared 3 actions in this object for setting 3 seperate evidence images. You&#x27;ll only have to remember that we&#x27;ll call these actions from other objects in the game.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/31-b43f7a280fc036851ce7993334c09c68.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>Select <strong>Train</strong> in the scene again and open up its <strong>Behavior</strong> tab. Go to <strong>Capture Behavior Group</strong> then add two <strong>Call Action</strong> nodes.<!-- -->
+<ul>
+<li>For the first one, set to <strong>&quot;3&quot;</strong> action under <strong>Camera &gt; Image</strong>.</li>
+<li>For the second one, set to <strong>&quot;3&quot;</strong> action under <strong>Camera &gt; Text</strong>.</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/32-3d9832369a0e9019657a867aa991d558.png" width="1920" height="1080" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Checkpoint</div><div class="admonitionContent_BuS1"><p>Run your project. Check that when you (<em>left click</em> to) take photo:</p><ul>
+<li>The camera screen displays the result image</li>
+</ul><p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/checkpoint5-f12f09275db708c969371835b044d985.gif" width="640" height="360" class="img_ev3q"></p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="extend-the-behavior-to-all-evidence-items">Extend the Behavior to All Evidence Items<a href="#extend-the-behavior-to-all-evidence-items" class="hash-link" aria-label="Direct link to Extend the Behavior to All Evidence Items" title="Direct link to Extend the Behavior to All Evidence Items">​</a></h3>
+<p>We have finished the behavior of one evidence. By duplicating objects and doing slight changes, we can extend the behavior to all 3 evidences: the train, bottles and body outline.</p>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/33-86ab4cb846d3520f72353409a79d6540.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol>
+<li>Select <strong>Train</strong> in the scene. <em>Duplicate</em> the <strong>Train</strong> and rename it as <strong>Bottles</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/34-6898c332eb82f759dc3f70601618bb03.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Set to 3D model of <strong>Bottles</strong> to a cube and set its color overlay to <em>FFFFFF 0% (transparent)</em>. Then, adjust the position, rotation and scale of <strong>Bottles</strong> so that it covers the three bottles in the scene. This will be the &quot;hitbox&quot; of our bottles in the scene.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/35-f92ec683e380ba1db8b5d2c2cebe89da.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>Open up its <strong>Behavior</strong> tab. Go to <strong>Capture Behavior Group</strong> and modify the following node:</li>
+</ol>
+<ul>
+<li>For the &quot;Tag 3: Show&quot; <strong>Call Action</strong> node, set target to <strong>Show</strong> action under <strong>Tag 2</strong>.</li>
+<li>For the &quot;Image: 3&quot; <strong>Call Action</strong> node, set target to <strong>&quot;2&quot;</strong> action under <strong>Image</strong>.</li>
+<li>For the &quot;Text: 3&quot; <strong>Call Action</strong> node, set target to <strong>&quot;2&quot;</strong> action under <strong>Text</strong>.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/36-4bfcf09512abac24022f7c7c9a20c5ef.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="4">
+<li>Now do the same (from 1 to 3) for the body outline.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/37-215c66e0c31e4ec161989493bc60c19a.png" width="1920" height="1080" class="img_ev3q">
+<img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/38-36da5a820b89af2a4f74d95a297b9029.png" width="1920" height="1080" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Checkpoint</div><div class="admonitionContent_BuS1"><p>Run your project. Check that:</p><ul>
+<li>You can take pictures of the train, bottles and body outline.</li>
+<li>You can see the tag appears in front of the evidence.</li>
+</ul><p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/checkpoint6-c21f0cf6d244e2be3a5d8a1339680b65.gif" width="640" height="360" class="img_ev3q"></p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="step-5-create-a-thanks-for-playing-message">Step 5: Create a Thanks For Playing Message<a href="#step-5-create-a-thanks-for-playing-message" class="hash-link" aria-label="Direct link to Step 5: Create a Thanks For Playing Message" title="Direct link to Step 5: Create a Thanks For Playing Message">​</a></h2>
+<p>Finally, let&#x27;s create a Thanks For Playing message for player when the game has ended.</p>
+<ol>
+<li>Add a 2D text object in the scene and rename it as <strong>Victory</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/39-cbb0a2ff892a535d0eb4a7f744007bd8.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Let&#x27;s edit the text object so that it shows <em>Thx for Playing</em> (Or any messages you&#x27;d like to show e.g. Credits: Made by XXX).</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/40-d48c47f1a13aadcfa4747fccea48f3ba.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>Switch to its <strong>Behavior</strong> tab. We can implement the display logic with the following nodes:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/41-5525d2211156fc7246cdb82f7ff7708d.png" width="1298" height="597" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Checkpoint</div><div class="admonitionContent_BuS1"><p>Run your project. Check that:</p><ul>
+<li><em>Thanks for Playing</em> message is shown when the remaining number of photos reaches 0</li>
+</ul><p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/checkpoint7-e2db23db9feb2e2e8bae20ca43274e25.gif" width="640" height="360" class="img_ev3q"></p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced-challenge-police-siren">Advanced Challenge: Police Siren<a href="#advanced-challenge-police-siren" class="hash-link" aria-label="Direct link to Advanced Challenge: Police Siren" title="Direct link to Advanced Challenge: Police Siren">​</a></h2>
+<div class="theme-admonition theme-admonition-danger admonition_xJq3 alert alert--danger"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>Challenge</div><div class="admonitionContent_BuS1"><p>This section requires understanding in <a href="https://www.mathsisfun.com/algebra/trig-sin-cos-tan-graphs.html" target="_blank" rel="noopener noreferrer">trigonometry maths</a>.</p></div></div>
+<p>In this section, we are going to utilize sine function to build a police siren lights. This subtle environmental light can add another layer of immersion to our game.</p>
+<ol>
+<li>Add a light object to the scene and rename it as <strong>Police Siren Light</strong>. Then, position it near the end of track inside the tunnel.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/42-10081b8aa3428e32e93aff7c12b894b8.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="2">
+<li>Set light type to <strong>Point</strong>, set intensity to <strong>2</strong> and set range to <strong>20</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/43-7b2742f4b81725f31ce39a051b86d3f4.png" width="1920" height="1080" class="img_ev3q"></p>
+<ol start="3">
+<li>Open up the <strong>Behavior</strong> tab. Add two number variables - <strong>MaxRange</strong> and <strong>Frequency</strong>, then set their default values to <strong>20</strong> and <strong>1.5</strong> respectively.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/44-d1a9b6156dc39542d8c201653878ae02.png" width="567" height="370" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>Did you know...</div><div class="admonitionContent_BuS1"><p>Police siren lights typically flash at a frequency of 1 - 4 Hz</p></div></div>
+<ol start="4">
+<li>By utilizing the sine function, we can implement the periodic flash behavior of a police siren light in this way:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/45-f6c2a610c1187dd56914af2dd51aa57f.png" width="1391" height="499" class="img_ev3q"></p>
+<ol start="5">
+<li>We can also implement the red and blue colors of the siren. Add the following nodes after the previous behavior:</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/46-c0801e05e7c09d599993c21ee93dae74.png" width="1429" height="796" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="mission-complete">Mission Complete<a href="#mission-complete" class="hash-link" aria-label="Direct link to Mission Complete" title="Direct link to Mission Complete">​</a></h2>
+<p>Congratulations! You have completed this tutorial. Take what you have learnt from this tutorial and go on to create other amazing VR experience in XRCC.</p>
+<p><img decoding="async" loading="lazy" src="/XRCC_Tutorial/assets/images/result-f15fffc5e776b6b6e063f032705644f7.gif" width="640" height="360" class="img_ev3q"></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/XRCC_Tutorial/Tutorial/Project4-CookAndServe"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Project 4 - Cook and Serve</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/XRCC_Tutorial/Tutorial/AnimalBuster Part 1 - Create a Slingshot"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">AnimalBuster Part 1 - Create a Slingshot</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview</a><ul><li><a href="#techniques-covered" class="table-of-contents__link toc-highlight">Techniques Covered</a></li><li><a href="#resources-download" class="table-of-contents__link toc-highlight">Resources Download</a></li><li><a href="#planning-what-youll-build" class="table-of-contents__link toc-highlight">Planning: What You&#39;ll Build</a></li></ul></li><li><a href="#step-1-set-up-the-camera" class="table-of-contents__link toc-highlight">Step 1: Set Up the Camera</a><ul><li><a href="#add-the-flash-visual-effect" class="table-of-contents__link toc-highlight">Add the Flash Visual Effect</a></li><li><a href="#equip-the-camera" class="table-of-contents__link toc-highlight">Equip the Camera</a></li></ul></li><li><a href="#step-2-set-up-the-clipboard-and-ui" class="table-of-contents__link toc-highlight">Step 2: Set Up the Clipboard and UI</a><ul><li><a href="#add-the-clipboard-mesh" class="table-of-contents__link toc-highlight">Add the Clipboard Mesh</a></li><li><a href="#display-number-of-remaining-photos" class="table-of-contents__link toc-highlight">Display Number of Remaining Photos</a></li><li><a href="#display-number-of-remaining-photos-ui-screen-alternative-approach" class="table-of-contents__link toc-highlight">Display Number of Remaining Photos (UI Screen Alternative Approach)</a></li></ul></li><li><a href="#step-3-set-up-the-evidence" class="table-of-contents__link toc-highlight">Step 3: Set Up the Evidence</a><ul><li><a href="#add-the-pointer-mesh" class="table-of-contents__link toc-highlight">Add the Pointer Mesh</a></li><li><a href="#implement-the-collision-check" class="table-of-contents__link toc-highlight">Implement the Collision Check</a></li><li><a href="#implement-the-capture-behavior" class="table-of-contents__link toc-highlight">Implement the Capture Behavior</a></li></ul></li><li><a href="#step-4-combine-everything" class="table-of-contents__link toc-highlight">Step 4: Combine Everything</a><ul><li><a href="#add-sound-effect" class="table-of-contents__link toc-highlight">Add Sound Effect</a></li><li><a href="#call-the-camera-flash" class="table-of-contents__link toc-highlight">Call the Camera Flash</a></li><li><a href="#show-the-evidence-tag" class="table-of-contents__link toc-highlight">Show the Evidence Tag</a></li><li><a href="#show-images-on-camera-screen" class="table-of-contents__link toc-highlight">Show Images on Camera Screen</a></li><li><a href="#extend-the-behavior-to-all-evidence-items" class="table-of-contents__link toc-highlight">Extend the Behavior to All Evidence Items</a></li></ul></li><li><a href="#step-5-create-a-thanks-for-playing-message" class="table-of-contents__link toc-highlight">Step 5: Create a Thanks For Playing Message</a></li><li><a href="#advanced-challenge-police-siren" class="table-of-contents__link toc-highlight">Advanced Challenge: Police Siren</a></li><li><a href="#mission-complete" class="table-of-contents__link toc-highlight">Mission Complete</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Pages</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/GeneralGuide/Overview">General Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/PCMode/Introduction">PC Mode</a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/XRMode/Introduction">XR Mode</a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/BehaviourOverview/Introduction">Behaviour</a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/Tutorial/Introduction">Tutorial</a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.votanic.com/zh-hk/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Votanic<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://www.youtube.com/@XRCCForYou" target="_blank" rel="noopener noreferrer" class="footer__link-item">Youtube<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/Fq86WKbtaN" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a class="footer__link-item" href="/XRCC_Tutorial/FAQ">FAQ</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024-2025 VOTANIC Limited All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
