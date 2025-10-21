@@ -15,9 +15,9 @@
             <pubDate>Mon, 20 Oct 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Updated]]></description>
             <content:encoded><![CDATA[<p>Updated</p>
-<ul><li>Updated release note hyperlink with repect to documentation udpate</li></ul>
+<ul><li>Updated release note hyperlink with respect to documentation update</li></ul>
 <p>Fixed</p>
-<ul><li>Hotfixed an issue where XRCC installer is not complete install when upgrade from older version</li><li>Fixed an issue where load scene from package with lightmap may lead to null</li><li>Fixed an issue where Math Compare Behaviour with equal may return wrong result due to precision error</li><li>Fixed an issue where&nbsp;Behaviour inputfield will go to next line and display empty by removed behaviour multiline feature after press enter</li><li>Fixed an issue where max is not inclusive for Random Integer Behaviour</li><li>Fixed an issue where upgrade strategy for Random Integer Behaviour</li></ul>]]></content:encoded>
+<ul><li>Hotfixed an issue where the XRCC installer is not completely installed when upgraded from an older version</li><li>Fixed an issue where load scene from package with lightmap may lead to null</li><li>Fixed an issue where Math Compare Behaviour with equal may return wrong result due to precision error</li><li>Fixed an issue where&nbsp;Behaviour inputfield will go to next line and display empty by removed behaviour multiline feature after press enter</li><li>Fixed an issue where max is not inclusive for Random Integer Behaviour</li><li>Fixed an issue where upgrade strategy for Random Integer Behaviour</li></ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[XRCC 3.1.3 Release]]></title>
