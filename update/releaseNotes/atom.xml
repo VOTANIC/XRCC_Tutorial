@@ -2,11 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/</id>
     <title>XRCC Documentation Blog</title>
-    <updated>2025-10-20T00:00:00.000Z</updated>
+    <updated>2025-10-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/"/>
     <subtitle>XRCC Documentation Blog</subtitle>
     <icon>https://votanic.github.io/XRCC_Tutorial/img/XRCCMiniLogo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[XRCC 3.1.3.2 Release]]></title>
+        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes3.1.3.2</id>
+        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes3.1.3.2"/>
+        <updated>2025-10-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fixed]]></summary>
+        <content type="html"><![CDATA[<p>Fixed</p>
+<ul><li> Fixed an issue where project loading may get stuck due to loading package</li><li> Fixed an issue where project loading may get stuck due to loading imported asset</li><li> Fixed an issue where screenshot captor may not work&nbsp;for&nbsp;360&nbsp;Images</li></ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[XRCC 3.1.3.1 Release]]></title>
         <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNote-3.1.3.1</id>
