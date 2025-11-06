@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7058],{28545:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/XRCC_Tutorial/update/releaseNotes/","page":1,"postsPerPage":20,"totalPages":1,"totalCount":20,"blogDescription":"Blog","blogTitle":"Release Notes"}}')}}]);
