@@ -2,21 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/</id>
     <title>XRCC Documentation Blog</title>
-    <updated>2025-10-27T00:00:00.000Z</updated>
+    <updated>2025-12-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/"/>
     <subtitle>XRCC Documentation Blog</subtitle>
     <icon>https://votanic.github.io/XRCC_Tutorial/img/XRCCMiniLogo.png</icon>
     <entry>
-        <title type="html"><![CDATA[XRCC 3.1.3.3 Release]]></title>
-        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes - 3.1.3.3</id>
-        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes - 3.1.3.3"/>
-        <updated>2025-10-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Updated]]></summary>
-        <content type="html"><![CDATA[<p>Updated</p>
-<ul><li> Updated UX for scene change in PC debug mode </li></ul>
+        <title type="html"><![CDATA[XRCC 3.1.4.1 Release]]></title>
+        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4.1</id>
+        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4.1"/>
+        <updated>2025-12-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fixed]]></summary>
+        <content type="html"><![CDATA[<p>Fixed</p>
+<ul>
+<li>Fixed an issue where Simiplified Chinese Translation missing</li>
+<li>Hotfixed an issue where Start Contact Trigger happened twice if the item show false after contact immediately</li>
+<li>Fixed an issue where application crash on disconnect Microbit device manually</li>
+<li>Fixed an issue where missing upgrade on <code>3.1.3</code> to <code>3.1.4</code></li>
+</ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[XRCC 3.1.4 Release]]></title>
+        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4</id>
+        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4"/>
+        <updated>2025-12-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[New]]></summary>
+        <content type="html"><![CDATA[<p>New</p>
+<ul>
+<li>Added <strong>Import Project As New Scene:</strong> You can now import external projects directly as new scenes within your active project.</li>
+<li>Added <strong>Clean-up Unused Assets:</strong> Added a feature to automatically clear out imported assets that are not currently in use.</li>
+<li>Added <strong>Sparks License:</strong> The Sparks watermark will appear in the bottom-right corner during both Edit and Play modes when using a Sparks license.</li>
+<li>Added <strong>XR Project Loading Progress Text:</strong> You will be able to track the project’s loading progress while in XR mode.</li>
+<li>Added new <strong>Component Properties</strong> in Behaviour Block</li>
+</ul>
+<p>Updated</p>
+<ul>
+<li>Merged some old behaviour block into new Component Properties Block</li>
+<li>Updated Microbit connection backend to increase stability</li>
+<li>Updated VotanicXR SDK to <code>2020.10.4f2</code></li>
+<li>Updated various Behaviour Blocks</li>
+</ul>
 <p>Fixed</p>
-<ul><li>Fixed an issue where duplicating or renaming a project with an older version would crash the project data </li><li>Fixed an issue where a warning was triggered when connecting Random Number Behaviour to other behaviour blocks </li><li>Fixed an issue where data was missing for Set Variable Behaviours during upgrades from older project versions </li><li>Fixed an issue where project loading may get stuck due to loading models from packages </li></ul>]]></content>
+<ul>
+<li>Fixed an issue where character model has unexpected offset / floating when the character model included self-control animators</li>
+<li>Fixed an issue where position of pop up panel not accurate after changing resolution of XRCC</li>
+<li>Fixed an issue where the scan button icon will keep rotate in the Microbit Panel after scanning for 30s or more</li>
+<li>Fixed an issue where Microbit ReadData feature will receive garbage data</li>
+<li>Fixed an issue where the "Animation Loop" attribute of models will get error when the project upgrade from version <code>3.1.1</code> to <code>3.1.2</code></li>
+<li>Fixed an issue where error occurs when loading images during upgrade project to <code>3.1.3</code></li>
+<li>Fixed an issue where incorrect Keyboard shortcut display in shortcuts Panel</li>
+<li>Fixed an issue where User Movement speed not applying correct units</li>
+<li>Fixed an issue where <a href="https://wit.ai/" target="_blank" rel="noopener noreferrer">Wit ai</a> panel not blocking underlying UI</li>
+<li>Fixed an issue where user is unable to deselect items with Ctrl during multi-selection</li>
+<li>Fixed an issue where Instance Panel not snapping to child objects when selected</li>
+<li>Fixed an issue where inspector flashing for one frame during scene changes in Debug/Play mode</li>
+<li>Fixed an issue where scene unloading before fade effect completes</li>
+<li>Fixed various BLE-related crashes issues</li>
+</ul>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[XRCC 3.1.3.2 Release]]></title>
@@ -286,20 +328,5 @@
 <ul><li>Fixed various UI issues on icon</li><li>Fixed various UI issues on project thumbnail icon </li><li>Fixed various UI issues on tooltip </li><li>Fixed various UI issues on inspector with Light Object</li><li>Fixed an issue when "Set Model" behaviour causes loading issue</li><li>Fixed an issue when "Fade" behaviour not working</li><li>Fixed an issue when connecting variable behaviour from number to text</li><li>Fixed an issue when physics does not update as expected if the model mesh is convex</li><li>Fixed an issue when unit setting not synchronize with setting panel</li><li>Fixed an issue when unit setting not update to appropriate input fields</li><li>Fixed an issue when asset select input of model item able to select special object </li><li>Fixed an issue when preview of entity UI Screen not working</li><li>Fixed an issue when Hide In Editor not working in some cases</li><li>Fixed an issue when items falling through scenery</li><li>Fixed an issue when switching motion between "idle" and default motion</li><li>Fixed an issue when wrong mode loaded in multiplayer session</li><li>Fixed an issue where player will hit unknown collider in network debug modes</li></ul>
 <p>Internal</p>
 <ul><li>Fixed unnamed submission to reporter report if no name from input or setting</li><li>Fixed changed model on runtime lead to material null on back to edit</li><li>Fixed inspector causing error when selecting light object</li><li>Diable changing to trigger for mesh collider when concave</li><li>Fixed physics object does not have physics material</li></ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[XRCC 3.0 Release]]></title>
-        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.0</id>
-        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.0"/>
-        <updated>2024-12-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Application Level]]></summary>
-        <content type="html"><![CDATA[<p>Application Level</p>
-<ul><li>In-app licensing</li><li>Online Text and Video Tutorial</li><li>Redesigned user interfaces for user experiences</li></ul>
-<p>Project Level</p>
-<ul><li>Favorite feature for project</li><li>Metadata for project, e.g. project thumbnail, description</li><li>Export image / 360 image of the scene</li></ul>
-<p>PC Edit level</p>
-<ul><li>Asset </li><ul><li>Redesigned unified asset management panel</li><li>Asset tag feature</li><li>More default assets</li><li>Allow model to use multiple animations</li><li>Character and motion upgrade</li><ul><li>Import custom character models with Mixamo standard</li><li>Integration to ReadyPlayerMe character platform API</li><li>Import custom fbx animation with Mixamo standard</li></ul></ul><li>UI</li><ul><li>Completely redesigned UI</li><ul><li>Object PopUp Panel</li><li>Quick access to Item list </li><li>Customizable project Unit Display</li></ul></ul><li>Object</li><ul><ul><li>Multilevel parenting (up to level 3)</li><li>Lock item for editing &amp; selection in scene</li><li>Changed default interactable value of objects based on its type</li><li>Disable item collider to set as scene environment</li></ul></ul></ul>
-<p>PC Play Level</p>
-<ul><li>Behaviour Update</li><ul><li>More Behaviours blocks to use for complete control on objects &amp; physics</li><li>More predictable Transform Behaviour Implementation</li><ul><li>Deterministic result for mixed transform behaviours</li></ul></ul><li>Better aligned PC preview and XR play </li><ul><li>Removed Jump On PC Play mode</li></ul></ul>]]></content>
     </entry>
 </feed>
