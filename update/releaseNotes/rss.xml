@@ -4,10 +4,36 @@
         <title>XRCC Documentation Blog</title>
         <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/</link>
         <description>XRCC Documentation Blog</description>
-        <lastBuildDate>Mon, 15 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 30 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[XRCC 3.1.5 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5</guid>
+            <pubDate>Fri, 30 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[New]]></description>
+            <content:encoded><![CDATA[<p>New</p>
+<ul>
+<li>Added XR System Setting Panel: You will be able to set the wand length and dragging time threshold while in XR mode Home Page and menu.</li>
+</ul>
+<p>Updated</p>
+<ul>
+<li>Updated Sketchfab support with OAuth authorization</li>
+<li>Updated some UI alignment</li>
+<li>Removed Ready Player Me Panel because the service has been discontinued</li>
+</ul>
+<p>Fixed</p>
+<ul>
+<li>Fixed an issue where the "Clean Up Unused Assets" feature incorrectly removed image assets currently assigned to the Skybox</li>
+<li>Fixed misleading UI elements within the Variable Panel</li>
+<li>Fixed an issue preventing UI panel clicks in Debug Mode when the cursor is hidden</li>
+<li>Fixed an issue where the asset selection panel did not support Chinese language input for searching</li>
+<li>Fixed an issue where project data would not save correctly after deleting a Project Variable</li>
+<li>Resolved a conflict where connecting a "SetTool" block after "Controller Press/Release" blocks prevented interaction with the XR Ring Menu in Debug and Play modes</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[XRCC 3.1.4.2 Release]]></title>
             <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4.2</link>
@@ -18,6 +44,20 @@
 <ul>
 <li>Fixed an issue where On Received Data Behaviour for Microbit cannot select scene variables</li>
 <li>Fixed an issue where project upgrade for asset data from 3.1.3 to 3.1.4 was not applied correctly</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[XRCC 3.1.4.1 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4.1</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4.1</guid>
+            <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fixed]]></description>
+            <content:encoded><![CDATA[<p>Fixed</p>
+<ul>
+<li>Fixed an issue where Simplified Chinese translation was missing</li>
+<li>Fixed an issue where the Start Contact Trigger fired twice when the target object’s “Show” property was set to false immediately after contact</li>
+<li>Fixed an issue where the application would crash when manually disconnecting a Microbit device</li>
+<li>Fixed an issue where project upgrade logic from 3.1.3 to 3.1.4 was not applied correctly</li>
 </ul>]]></content:encoded>
         </item>
         <item>
@@ -301,32 +341,6 @@
 <ul><li>Updated physics collision on entity's child items</li><li>Improved UX on Sketchfab panel</li></ul>
 <p>Fixed</p>
 <ul><li>Fixed an issue where teleporter will teleport to wrong position</li><li>Hotfixed an issue where an entity's child items will disappear when the entity is disabled</li><li>Fixed an issue where behaviour UI elements are loaded in wrong position under different display resolution</li><li>Fixed an issue where keyboard control is not working as expected when the scene has gravity in XR mode</li><li>Fixed an issue where read-only asset causes infinite loading during import and all subsequent project loading operations</li><li>Fixed an issue where On Click Behaviour is not working as expected in Slideshow 2D Object and Document Object</li><li>Fixed an issue where behaviour action can be added to&nbsp;items not allowed behaviour (i.e. entity&nbsp;and&nbsp;user)</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.0.2 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2</guid>
-            <pubDate>Wed, 22 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[New]]></description>
-            <content:encoded><![CDATA[<p>New</p>
-<ul><li>Added open file location on project thumbnail in PC homepage</li><li>Added more information in Project Information Panel</li><li>Added model animation preview in inspector</li><li>Added mode selection on open project in XR mode</li></ul>
-<p>Updated</p>
-<ul><li>Updated Reporter Panel to require name and email</li><li>Improved UX on Reporter Panel to support multi-select to update files</li><li>Updated project name synchronizing to file name</li><li>Improved performance on Item Menu</li><li>Improved performance on update physics collider in Text Object</li><li>Improved UX on light preview range of Light Object</li><li>Updated entity position and rotation in play mode to use Edit mode data in PC play mode</li><li>Improved UX on Action Selection Panel</li><li>Improved UX on loading package in XR mode</li><li>Updated keyboard control for move up and down in XR mode</li><li>Updated implementation for Empty Object with isWall attribute</li></ul>
-<p>Bug fixes</p>
-<ul><li>Fixed an issue where some settings on UI are not stored in setting data</li><li>Fixed an issue where color picker panel is not working as expected</li><li>Fixed an issue where undo/redo action are not working as expected after entering play mode</li><li>Hotfixed an issue where undo/redo action are not working as expected when the operation is dealing with large amount of items</li><li>Fixed some typos in behaviours block names</li><li>Fixed an issue where text overlay is not working and overlay on top of images</li><li>Fixed an issue where items are unable to parent to Light Object</li><li>Fixed an issue where teleporter tool is not working as expected</li><li>Fixed an issue where saving is not working in scene panel</li><li>Fixed an issue where auto-save failed to function</li><li>Fixed an issue where fine-tuning of input values in popup panel is not working when the value is default value</li><li>Fixed an issue where model asset not requesting recenter when import model from file and Sketchfab</li><li>Fixed an issue where Skybox image could not update when pressing the remove button</li><li>Fixed an issue where change scene asset failed to update the scene thumbnail</li><li>Fixed an issue where scene thumbnail in inspector is not updated as expected after changing scene asset</li><li>Fixed an issue where scene name in inspector not updated as expected when using scene from package</li><li>Fixed an issue where scene thumbnail could not be read from package</li><li>Fixed an issue where ccdata file can be selected when import asset</li><li>Fixed an issue where model rotation and scale from package are not assigned as expected</li><li>Fixed an issue where parenting sometimes not work when trying to link a child item to parent item already have two levels of children item</li><li>Fixed an issue where calling Fade Behaviour in play mode will affect input and UI when going back to edit mode</li><li>Fixed an issue where behaviour layer panel not refresh on new layer created by other panel</li><li>Fixed an issue where Action Start Behaviour can be selected and duplicated in behaviour panel</li><li>Hotfixed an issue where Set Model behaviour wrongly set color to white</li><li>Fixed an issue where Play Sound Behaviour failure will stop all subsequent behaviours when no audio asset is assigned </li><li>Fixed an issue where Start Contact Behaviour is not working with entity</li><li>Fixed an issue where behaviour variables lost reference when the variable is renamed</li><li>Fixed an issue where change material color is not working as expected in behaviour</li><li>Fixed an issue where player tool does not change to wand when opening ring menu in XR mode</li><li>Fixed an issue where fade is not working as expected in XR mode</li><li>Fixed an issue where gravity setting is not working as expected in XR mode</li><li>Fixed an issue where move the player up &amp; down may fall through the ground in XR mode</li><li>Fixed an issue where asset sometimes cannot be spawned in XR mode</li><li>Fixed an issue where item display not working as expected after updating Hide In Edit and Hide In Play attribute</li><li>Fixed an issue where Start Contact Behaviour triggered twice when making contact to user</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.0.1 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.1</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.1</guid>
-            <pubDate>Tue, 07 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Updated]]></description>
-            <content:encoded><![CDATA[<p>Updated</p>
-<ul><li>Improved UX for loading </li><li>Improved UX for editing with Light Object </li><li>Improved UX for reporter submission by supporting multiline input</li><li>Improved performance on loading pack</li></ul>
-<p>Bug fixes</p>
-<ul><li>Fixed various UI issues on icon</li><li>Fixed various UI issues on project thumbnail icon </li><li>Fixed various UI issues on tooltip </li><li>Fixed various UI issues on inspector with Light Object</li><li>Fixed an issue when "Set Model" behaviour causes loading issue</li><li>Fixed an issue when "Fade" behaviour not working</li><li>Fixed an issue when connecting variable behaviour from number to text</li><li>Fixed an issue when physics does not update as expected if the model mesh is convex</li><li>Fixed an issue when unit setting not synchronize with setting panel</li><li>Fixed an issue when unit setting not update to appropriate input fields</li><li>Fixed an issue when asset select input of model item able to select special object </li><li>Fixed an issue when preview of entity UI Screen not working</li><li>Fixed an issue when Hide In Editor not working in some cases</li><li>Fixed an issue when items falling through scenery</li><li>Fixed an issue when switching motion between "idle" and default motion</li><li>Fixed an issue when wrong mode loaded in multiplayer session</li><li>Fixed an issue where player will hit unknown collider in network debug modes</li></ul>
-<p>Internal</p>
-<ul><li>Fixed unnamed submission to reporter report if no name from input or setting</li><li>Fixed changed model on runtime lead to material null on back to edit</li><li>Fixed inspector causing error when selecting light object</li><li>Diable changing to trigger for mesh collider when concave</li><li>Fixed physics object does not have physics material</li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
