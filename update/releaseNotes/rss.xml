@@ -4,10 +4,22 @@
         <title>XRCC Documentation Blog</title>
         <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/</link>
         <description>XRCC Documentation Blog</description>
-        <lastBuildDate>Fri, 28 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[XRCC 3.1.4.2 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4.2</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4.2</guid>
+            <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fixed]]></description>
+            <content:encoded><![CDATA[<p>Fixed</p>
+<ul>
+<li>Fixed an issue where On Received Data Behaviour for Microbit cannot select scene variables</li>
+<li>Fixed an issue where project upgrade for asset data from 3.1.3 to 3.1.4 was not applied correctly</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[XRCC 3.1.4 Release]]></title>
             <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.4</link>
@@ -315,21 +327,6 @@
 <ul><li>Fixed various UI issues on icon</li><li>Fixed various UI issues on project thumbnail icon </li><li>Fixed various UI issues on tooltip </li><li>Fixed various UI issues on inspector with Light Object</li><li>Fixed an issue when "Set Model" behaviour causes loading issue</li><li>Fixed an issue when "Fade" behaviour not working</li><li>Fixed an issue when connecting variable behaviour from number to text</li><li>Fixed an issue when physics does not update as expected if the model mesh is convex</li><li>Fixed an issue when unit setting not synchronize with setting panel</li><li>Fixed an issue when unit setting not update to appropriate input fields</li><li>Fixed an issue when asset select input of model item able to select special object </li><li>Fixed an issue when preview of entity UI Screen not working</li><li>Fixed an issue when Hide In Editor not working in some cases</li><li>Fixed an issue when items falling through scenery</li><li>Fixed an issue when switching motion between "idle" and default motion</li><li>Fixed an issue when wrong mode loaded in multiplayer session</li><li>Fixed an issue where player will hit unknown collider in network debug modes</li></ul>
 <p>Internal</p>
 <ul><li>Fixed unnamed submission to reporter report if no name from input or setting</li><li>Fixed changed model on runtime lead to material null on back to edit</li><li>Fixed inspector causing error when selecting light object</li><li>Diable changing to trigger for mesh collider when concave</li><li>Fixed physics object does not have physics material</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.0 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.0</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.0</guid>
-            <pubDate>Fri, 20 Dec 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Application Level]]></description>
-            <content:encoded><![CDATA[<p>Application Level</p>
-<ul><li>In-app licensing</li><li>Online Text and Video Tutorial</li><li>Redesigned user interfaces for user experiences</li></ul>
-<p>Project Level</p>
-<ul><li>Favorite feature for project</li><li>Metadata for project, e.g. project thumbnail, description</li><li>Export image / 360 image of the scene</li></ul>
-<p>PC Edit level</p>
-<ul><li>Asset </li><ul><li>Redesigned unified asset management panel</li><li>Asset tag feature</li><li>More default assets</li><li>Allow model to use multiple animations</li><li>Character and motion upgrade</li><ul><li>Import custom character models with Mixamo standard</li><li>Integration to ReadyPlayerMe character platform API</li><li>Import custom fbx animation with Mixamo standard</li></ul></ul><li>UI</li><ul><li>Completely redesigned UI</li><ul><li>Object PopUp Panel</li><li>Quick access to Item list </li><li>Customizable project Unit Display</li></ul></ul><li>Object</li><ul><ul><li>Multilevel parenting (up to level 3)</li><li>Lock item for editing &amp; selection in scene</li><li>Changed default interactable value of objects based on its type</li><li>Disable item collider to set as scene environment</li></ul></ul></ul>
-<p>PC Play Level</p>
-<ul><li>Behaviour Update</li><ul><li>More Behaviours blocks to use for complete control on objects &amp; physics</li><li>More predictable Transform Behaviour Implementation</li><ul><li>Deterministic result for mixed transform behaviours</li></ul></ul><li>Better aligned PC preview and XR play </li><ul><li>Removed Jump On PC Play mode</li></ul></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
