@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/</id>
     <title>XRCC Documentation Blog</title>
-    <updated>2026-01-30T00:00:00.000Z</updated>
+    <updated>2026-02-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/"/>
     <subtitle>XRCC Documentation Blog</subtitle>
     <icon>https://votanic.github.io/XRCC_Tutorial/img/XRCCMiniLogo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[XRCC 3.1.5.1 Release]]></title>
+        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5.1</id>
+        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5.1"/>
+        <updated>2026-02-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fixed]]></summary>
+        <content type="html"><![CDATA[<p>Fixed</p>
+<ul>
+<li>Fixed an issue where Sketchfab UI not aligned to the login status</li>
+<li>Fixed an issue where Sparks tier cannot be recognized successfully</li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[XRCC 3.1.5 Release]]></title>
         <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5</id>
@@ -329,16 +341,5 @@
 <ul><li>Updated most of the input field with scroll bar</li><li>Updated shortcut of special items at left in edit mode</li><li>Updated support for import wav audio with float wav format</li><li>Improved UX of scene menu</li><li>Improved UX of asset panel</li><li>Improved UX of entity panel</li><li>Improved UX of network player panel</li><li>Improved UX of panel panel</li><li>Improved UX of asset input panel</li><li>Improved UX of Sketchfab panel</li><li>Improved UX of action selection and anchor point selection panel</li><li>Improved UX of behaviour category tab</li><li>Improved UX of behaviour panel</li><li>Improved UX of reporter panel</li><li>Improved UX of pop-up panel when moving the camera or modifying the transform of items</li></ul>
 <p>Fixed</p>
 <ul><li>Fixed an issue where the scene name input field is not clickable in scene menu</li><li>Fixed an issue where some operations not notify the project modified</li><li>Fixed an issue where model animation preview did not pause when using the progress bar</li><li>Fixed an issue where property Hide In Edit and Hide In Play not applying to the children of item</li><li>Fixed an issue where the user cannot toggle the gizmos space in edit mode</li><li>Fixed an issue where error caused when setting texture to custom material</li><li>Fixed an issue where camera position move unexpectedly after right click release in edit mode</li><li>Fixed an issue where open exist project has no response when saving project</li><li>Fixed an issue where popup panel settings not saved to setting</li><li>Fixed an issue where start contact to player is not working as expected</li><li>Fixed an issue where error caused by linking objects in item menu</li><li>Fixed an issue where Set Position behaviour not working as expected when enabling relative</li><li>Fixed an issue where project thumbnail changes not notify the project modified</li><li>Fixed an issue where issue occurs when inputing non numeric characters to input field</li><li>Fixed an issue where ReadyPlayerMe unable to import character with invalid link</li><li>Fixed an issue where ReadyPlayerMe not working as expected when inputting link</li><li>Fixed an issue where Slideshow auto start not working as expected</li><li>Fixed an issue where teleporter unable to snap to waypoint inside a scene item</li><li>Fixed an issue where physics not working as expected for item hidden in play mode</li><li>Fixed an issue where Look At Behaviour not talking correct result</li><li>Fixed some typos</li></ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[XRCC 3.0.2.1 Release]]></title>
-        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2.1</id>
-        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2.1"/>
-        <updated>2025-01-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Updated]]></summary>
-        <content type="html"><![CDATA[<p>Updated</p>
-<ul><li>Updated physics collision on entity's child items</li><li>Improved UX on Sketchfab panel</li></ul>
-<p>Fixed</p>
-<ul><li>Fixed an issue where teleporter will teleport to wrong position</li><li>Hotfixed an issue where an entity's child items will disappear when the entity is disabled</li><li>Fixed an issue where behaviour UI elements are loaded in wrong position under different display resolution</li><li>Fixed an issue where keyboard control is not working as expected when the scene has gravity in XR mode</li><li>Fixed an issue where read-only asset causes infinite loading during import and all subsequent project loading operations</li><li>Fixed an issue where On Click Behaviour is not working as expected in Slideshow 2D Object and Document Object</li><li>Fixed an issue where behaviour action can be added to&nbsp;items not allowed behaviour (i.e. entity&nbsp;and&nbsp;user)</li></ul>]]></content>
     </entry>
 </feed>
