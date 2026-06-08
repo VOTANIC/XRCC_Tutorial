@@ -2,79 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/</id>
     <title>XRCC Documentation Blog</title>
-    <updated>2026-06-03T00:00:00.000Z</updated>
+    <updated>2026-03-02T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/"/>
     <subtitle>XRCC Documentation Blog</subtitle>
     <icon>https://votanic.github.io/XRCC_Tutorial/img/XRCCMiniLogo.png</icon>
-    <entry>
-        <title type="html"><![CDATA[XRCC 4.0 Release]]></title>
-        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0</id>
-        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0"/>
-        <updated>2026-06-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[New Features]]></summary>
-        <content type="html"><![CDATA[<p>New Features</p>
-<ul>
-<li>XRCC Launcher Integration - Launch project and communicate with XRCC Launcher</li>
-<li>AI Generation with Poe AI integration (Text-to-Image, Text-to-Sound, Text-to-Music, and AI Characters)</li>
-<li>Poe AI integration with behaviours (Text-to-Speech, Speech-to-Text, Text-to-Text, and AI Chat)</li>
-<li>External Connection System (Poe, Wit.ai, Microcontroller/MCU including Microbit via BLE, and Remote Trigger)</li>
-<li>Item Tagging System with behaviours</li>
-<li>Headmount play mode support in PC mode</li>
-<li>Behaviour search</li>
-</ul>
-<p>Updated</p>
-<ul>
-<li>UI/UX overhaul on most panels</li>
-<li>Improved Network Mode stability</li>
-<li>Improved Asset &amp; Package import system with in-app import and background loading</li>
-<li>Improved file validation for asset import</li>
-<li>Improved transitions and dialogs</li>
-<li>Updated MCU / Microcontroller panels and connection UI</li>
-<li>Added Screenshot Capture on save project in local mode</li>
-<li>Added some behaviours with variable</li>
-<li>Removed ReadyPlayerMe support</li>
-</ul>
-<p>Fixed</p>
-<ul>
-<li>Fixed user unable to visualize ground collider and import scene issue</li>
-<li>Fixed XR UI dialog panel flickering</li>
-<li>Fixed package import error when closing asset panel during import</li>
-<li>Fixed filename check wrongly applied to network projects</li>
-<li>Fixed File Browser crash / freeze when there are too many files on the device</li>
-<li>Fixed scene not unloaded properly on network disconnect</li>
-<li>Fixed project / scene thumbnail capture and display issues</li>
-<li>Fixed multiple UI positioning, z-depth, and navigation problems</li>
-<li>Fixed Play / VR mode button and dialog issues</li>
-<li>Fixed tooltip appearing behind other UI elements</li>
-<li>Fixed ground collider visualization and collision</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[XRCC 3.1.5.4 Release]]></title>
-        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5.4</id>
-        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5.4"/>
-        <updated>2026-05-11T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Fixed]]></summary>
-        <content type="html"><![CDATA[<p>Fixed</p>
-<ul>
-<li>Fixed an issue where changing animations caused a single-frame reset pose.</li>
-<li>Fixed an issue where bold font is not displayed correcly</li>
-</ul>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[XRCC 3.1.5.3 Release]]></title>
-        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5.3</id>
-        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5.3"/>
-        <updated>2026-03-24T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Fixed]]></summary>
-        <content type="html"><![CDATA[<p>Fixed</p>
-<ul>
-<li>Fixed an issue where Empty Object cannot be selected in edit mode</li>
-<li>Fixed an issue where Transform Scale cannot be modified in inspector after set to zeros</li>
-<li>Fixed an issue where license cannot be recognized successfully</li>
-</ul>]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[XRCC 3.1.5.2 Release]]></title>
         <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.5.2</id>
@@ -372,5 +304,40 @@
 <ul><li>Updated UX on most UI</li><li>Updated Sketchfab download model process with improved error handling and error messages</li><li>Updated notification system for project rename failure </li><li>Updated behaviour variables panel with re-ordering UI component and UX update </li><li>Updated UX for using instance popup panel</li></ul>
 <p>Fixed</p>
 <ul><li>Fixed an issue where wand length can set with negative </li><li>Fixed an issue where XR file browser folder title not updating with path changes </li><li>Fixed an issue where project search could not handle upper case input names</li><li>Fixed an issue where project loading failed when switching to behaviour panel during loading </li><li>Fixed null reference issue in instance panel during loading sequence</li><li>Fixed an issue where user cannot float in air in XR mode when gravity is disabled </li><li>Fixed an issue to prevent animations from playing on models with errors </li><li>Fixed an issue where Math Compare behaviour returning incorrect results with default operator value </li><li>Fixed an issue where the PC quit dialog panel hiding cursor when canceling </li><li>Fixed an issue where save as button not working as expected in XR mode</li><li>Fixed extremely high movement speed in PC mode when user gravity is disabled</li><li>Fixed an issue where Inspector of Text Object cannot show Chinese characters</li><li>Fixed an issue where screenshot captor not able to screenshot Text, Button, Image and Video Object in the scene</li><li>Fixed an issue where Light Object cannot be selected in network edit mode</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[XRCC 3.0.2.5 Release]]></title>
+        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2.5</id>
+        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2.5"/>
+        <updated>2025-03-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Updated]]></summary>
+        <content type="html"><![CDATA[<p>Updated</p>
+<ul><li>Improved memory usage of image asset</li><li>Improved performance of physics behaviour</li><li>Improved the logic and history operation of "hide in edit" operation</li><li>Improved the user interface of network lobby in PC mode and XR mode</li><li>Improved the user experience of asset panel with package</li><li>Improved the user experience of Image 2D Object by update the rendering method between transparent and non-transparent image</li><li>Updated wand position in PC mode</li><li>Updated font type of OptionBox object</li><li>Updated the two-sided property of Image 2D and Video 2D Object with the update of transparency image handling</li><li>Updated xr file browser to prevent confusion</li></ul>
+<p>Fixed</p>
+<ul><li>Fixed an issue where link and unlink pointing wrong target in different resolution</li><li>Fixed an issue where online project is added to recent project</li><li>Fixed an issue where importing in asset selection panel failing</li><li>Fixed an issue where imported image being resized</li><li>Fixed an issue where XR home page recent project not sorting as expected</li><li>Fixed an issue where modify project during saving is not marked as project modified and ignore changes on quit</li><li>Fixed an issue where wrong item is selected in item panel jump</li><li>Fixed an issue where delete item may cause error in item panel</li><li>Fixed an issue where item with 2 level of children not able to parent to entity </li><li>Fixed an issue where wand not trigger "Stop Pointing" behaviour on disable by Set Tool Behaviour</li><li>Fixed an issue where spawn buttons of asset panel not working in network mode</li><li>Fixed an issue where server crash on spawning ground object in network mode</li><li>Fixed an issue where Call Action not working as expected in network mode</li><li>Fixed an issue where inspector item tab not releasing authority on unselect</li><li>Fixed an issue where OptionBox object reset not working for caption and sound</li><li>Fixed an issue where attempting to auto save caused error in network mode</li><li>Fixed an issue where "hide in edit/play" not working when joining network session</li><li>Fixed an issue where locked object blocked selection</li><li>Fixed an issue where status of collapsed item button not update as expected </li><li>Fixed an issue where wand not showing as expected in XR network mode</li><li>Fixed an issue where user transformation behaviours retain effects from play mode to edit mode</li><li>Fixed an issue where project upgrade from XRCC 2 may failed</li><li>Fixed an issue where the result is always false if the dropdown of Math Compare Behaviour not modified</li><li>Fixed an issue where the wand not shown in ring menu after it is hidden by behaviour</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[XRCC 3.0.2.4 Release]]></title>
+        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2.4</id>
+        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2.4"/>
+        <updated>2025-02-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Updated]]></summary>
+        <content type="html"><![CDATA[<p>Updated</p>
+<ul><li>Updated file browser allowing import of multiple attachments in Reporter Panel </li><li>Updated item and user to ignore gravity when they are moving through the "Set Position" behaviour</li><li>Updated Ground Object to diasble collider when "Hide In Play" is enabled</li></ul>
+<p>Fixed</p>
+<ul><li>Fixed an issue where notification show up unexpectedly</li><li>Fixed an issue where network mode may not be connected after disconnection</li><li>Fixed an issue where color panel may not work properly</li><li>Fixed an issue where undo/redo operation not working as expected in model asset </li><li>Fixed an issue where Waypoint Object not hiding after enable "Hide In Play"</li><li>Fixed an issue where Play audio override the last playing audio</li><li>Fixed an issue where children under entity not able to select in get/set variable</li><li>Fixed an issue where reset not working with correct default value in inspector of entity </li><li>Fixed an issue where modify item's "Hide In Play" and "Lock" option cannot be saved to project</li><li>Fixed an issue where default color value of OptionBox Object is wrong</li><li>Fixed an issue where behaviour flow is stopped if invoking "Call Action" behaviour without calling an action</li><li>Fixed an issue where Entity cannot invoke Stop Contact Behaviour</li></ul>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[XRCC 3.0.2.3 Release]]></title>
+        <id>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2.3</id>
+        <link href="https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.0.2.3"/>
+        <updated>2025-02-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[New]]></summary>
+        <content type="html"><![CDATA[<p>New</p>
+<ul><li>Added buttons for link and unlink</li></ul>
+<p>Updated</p>
+<ul><li>Updated UX for scene panel</li><li>Updated UX for behaviour panel with right click drag to pan the view</li><li>Updated UX for searching asset panel features</li><li>Updated UX for save button and save condition</li><li>Updated to reset the material color to white on change model asset in inspector</li></ul>
+<p>Fixed</p>
+<ul><li>Fixed an issue where entity item's inspector panel is not working as expected</li><li>Fixed an issue where teleporter tool cannot point to waypoint inside an object</li><li>Fixed an issue where cursor not reappear when exit play mode by shortcut</li><li>Fixed an issue where inspector did not close in play mode</li><li>Fixed an issue where failed to login to Sketchfab when "like" a model in Sketchfab panel without login</li><li>Fixed an issue where license activation panel not display as expected</li><li>Fixed an issue where network connection button not working as expected on connected server shut down</li><li>Fixed an issue where option data of OptionBox Object may not work properly on undo/redo</li></ul>]]></content>
     </entry>
 </feed>
