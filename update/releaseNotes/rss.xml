@@ -4,10 +4,265 @@
         <title>XRCC Documentation Blog</title>
         <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/</link>
         <description>XRCC Documentation Blog</description>
-        <lastBuildDate>Wed, 03 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Sep 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[XRCC 4.1.0.2 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.1.0.2</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.1.0.2</guid>
+            <pubDate>Wed, 23 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[New features]]></description>
+            <content:encoded><![CDATA[<p>New features</p>
+<ul>
+<li>Added Behaviour Tidy / Auto-Organize in the PC Behaviour Panel</li>
+<li>Added duplicate behaviour group in the PC Behaviour Panel</li>
+<li>Added Quiz behaviours: Start Quiz, On Quiz Start, and Get Quiz Property (question count, quiz finished, correct answer count)</li>
+</ul>
+<p>Updated</p>
+<ul>
+<li>Improved Quiz Editor user experience, including question validation, AI suggestions, Make Similar, project source, and layout</li>
+<li>Updated Debug Panel Watch Tab UI on PC and XR</li>
+<li>Improved unique naming when creating or duplicating items</li>
+<li>Updated Skybox/ambient lighting so only directional environment lights are toggled; point and spot lights stay on</li>
+<li>Updated camera focus on light object</li>
+</ul>
+<p>Fixed</p>
+<ul>
+<li>Fixed packaged scene lighting not applying correctly when loading or switching scene assets, and when entering or leaving play mode</li>
+<li>Fixed player wand remaining enabled when the XR panel is closed</li>
+<li>Fixed Open Debug Review After Play Mode setting inverted usage</li>
+<li>Fixed tooltips, including Chinese text and display order</li>
+<li>Fixed File Browser selection when deselecting the last file with Ctrl</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[XRCC 4.1.0.1 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.1.0.1</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.1.0.1</guid>
+            <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fixed]]></description>
+            <content:encoded><![CDATA[<p>Fixed</p>
+<ul>
+<li>Fixed incorrect localization</li>
+<li>Fixed incorrect license recognition</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[XRCC 4.1.0 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.1.0</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.1.0</guid>
+            <pubDate>Tue, 15 Sep 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[New features]]></description>
+            <content:encoded><![CDATA[<p>New features</p>
+<ul>
+<li>Project Source<!-- -->
+<ul>
+<li>Create Project Sources to reuse as context for AI Quiz and AI Characters</li>
+<li>Upload documents and use AI to extract key information to use in project sources</li>
+<li>Analyze and reanalyze Project Sources</li>
+<li>Set source focus and review source revisions / processing warnings</li>
+</ul>
+</li>
+<li>Added Quiz object<!-- -->
+<ul>
+<li>Quiz object<!-- -->
+<ul>
+<li>Added Quiz Special Object</li>
+<li>Spawn Quiz object from Asset Panel under Special Object</li>
+<li>Edit questions in the Quiz Editor Panel</li>
+<li>Configure runtime quiz panel appearance and theme</li>
+</ul>
+</li>
+<li>AI quiz generation<!-- -->
+<ul>
+<li>Generate questions with AI from Project Sources</li>
+<li>Generate multiple questions and edit generated results</li>
+</ul>
+</li>
+<li>Quiz scoping with AI Character chat<!-- -->
+<ul>
+<li>Integrate with AI Character for quiz workflows</li>
+<li>Dynamically scope the quiz question list based on AI Character chat content</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Added Asset Property editing and file replacement in the Asset Panel<!-- -->
+<ul>
+<li>Edit asset name, description, tags, and license</li>
+<li>Replace asset source files for a selected asset</li>
+<li>Multi-select batch edit with mixed-value support</li>
+<li>Model pivot recentering and Sketchfab source metadata display</li>
+</ul>
+</li>
+<li>Added Behaviour System features<!-- -->
+<ul>
+<li>Added dynamic-size behaviour blocks</li>
+<li>Added behaviour block tooltip descriptions</li>
+<li>Added auto-snap with axis-lock placement</li>
+</ul>
+</li>
+<li>Added Runtime Debug Panel for PC and XR to inspect watched variables, change logs, and behaviour warnings in Debug and Play modes</li>
+<li>Added Capture Thumbnail On Save toggle in Settings</li>
+</ul>
+<p>Updated</p>
+<ul>
+<li>Updated AI Character with advanced settings panel, source grounding, and improved Auto-type prompt generation</li>
+<li>Updated Poe API key panels to UI Toolkit and prevented duplicate API key names on create</li>
+<li>Restricted Poe speech-to-text to English, Mandarin, and Cantonese</li>
+<li>Improved Asset Panel sorting so assets from the same pack are grouped together</li>
+<li>Updated Asset Inspector, Replace Asset File, License Viewer, and Sketchfab source display UI</li>
+<li>Required unique names when renaming assets and instances, and kept AI Character instance names in sync</li>
+<li>Added loading package status text during package load</li>
+<li>Blocked selected editor operations while a project is saving</li>
+</ul>
+<p>Fixed</p>
+<ul>
+<li>Fixed microphone StartRecording reusing a stale recording file</li>
+<li>Fixed wand detection for floor and wall layers</li>
+<li>Fixed player unable to walk up stairs</li>
+<li>Fixed LaserPointer raycast and highlight to match Wand on floor and wall layers</li>
+<li>Fixed item tags not displaying correctly in the Item Panel</li>
+<li>Fixed changing scene failing after loading a packaged model</li>
+<li>Fixed XR Debug mode returning to home without cleaning up the info wall</li>
+<li>Fixed light probe groups and startpoint lighting not loading from packages</li>
+<li>Fixed measurer lines and reporter captured images not clear up in XR mode</li>
+<li>Fixed behaviours not stopping when changing mode</li>
+<li>Fixed Save As producing an invalid project archive</li>
+<li>Fixed Import Package panel scroll lag</li>
+<li>Fixed MCU setup panel rendering above the fader in XR</li>
+<li>Fixed file browser restoring a cached path on project save, and UI Toolkit panels remaining open over the file browser</li>
+<li>Fixed tooltips not cleaning up and the save button showing the wrong icon after save</li>
+<li>Fixed Dialog panel failing to load during a lag spike</li>
+<li>Fixed blinker null reference when a model material is missing</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[XRCC 4.0.1.2 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0.1.2</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0.1.2</guid>
+            <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[New features]]></description>
+            <content:encoded><![CDATA[<p>New features</p>
+<p>Updated</p>
+<ul>
+<li>Enhanced Popup Dialog UI</li>
+<li>Improved asset management loading logic</li>
+</ul>
+<p>Fixed</p>
+<ul>
+<li>Fixed font assets with rare Chinese and bold</li>
+<li>Fixed "Start Looking At Tag" behaviour display name</li>
+<li>Fixed Poe AI behaviour model select dropdown to populate options by task type</li>
+<li>Fixed missing icon in Home Page</li>
+<li>Fixed issue on open project via XRCC Launcher</li>
+<li>Fixed Shuffle option in Option Box Object not working</li>
+<li>Fixed virtual keyboard clicked key missing effects in XR mode</li>
+<li>Fixed PC Asset Panel showing wrong asset count</li>
+<li>Fixed action not pointing correctly in Option Box and Button after duplicate and paste</li>
+<li>Fixed undo and redo of paste, delete, and spawn not working after scene switch</li>
+<li>Fixed behaviour workflow for update variable</li>
+<li>Fixed empty UI Panle shown in XR mode</li>
+</ul>
+<p>Removed</p>
+<ul>
+<li>Removed Text to Sound behaviour node from Behaviour Panel (#1286)</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[XRCC 4.0.1.1 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0.1.1</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0.1.1</guid>
+            <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[New features]]></description>
+            <content:encoded><![CDATA[<p>New features</p>
+<ul>
+<li>Added Start Talking and Stop Talking behaviour triggers for Poe</li>
+<li>Added Get Is Playing Audio behaviour node</li>
+</ul>
+<p>Updated</p>
+<ul>
+<li>Improved Project Creation Panel UI (package section, scene toggle, create button, tooltips)</li>
+<li>Improved popup menu panel positioning to reduce vibration when selecting animating items</li>
+<li>Improved Home page By Recent sorting so duplicated projects stay stable when save times match</li>
+<li>Updated app open process arguments for setting path and resources path</li>
+<li>Removed local save path setting from the settings panel</li>
+</ul>
+<p>Fixed</p>
+<ul>
+<li>Fixed an issue where missing behaviours in the behaviour library (including Play Video / video 3D property nodes)</li>
+<li>Fixed an issue where trial premium license unable to access premium content</li>
+<li>Fixed an issue where local projects missing outline in network mode</li>
+<li>Fixed an issue where server unable to save project</li>
+<li>Fixed an issue where unable to return to current position when returning to edit mode in network mode</li>
+<li>Fixed an issue where Home page duplicate and delete project issues</li>
+<li>Fixed an issue where open project through launcher and upgrade failure not returning to home</li>
+<li>Fixed an issue where Project Creation Panel UI when opened inside an existing project</li>
+<li>Fixed an issue where import button remaining disabled after selecting a package</li>
+<li>Fixed an issue where Get String Variable display</li>
+<li>Fixed an issue where assets sorting incorrectly after deleting an asset</li>
+<li>Fixed an issue where package tooltip not closing when closing the Project Creation Panel</li>
+<li>Fixed an issue where incorrect premium package tab toggle icon</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[XRCC 4.0.1 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0.1</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0.1</guid>
+            <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[New Features]]></description>
+            <content:encoded><![CDATA[<p>New Features</p>
+<ul>
+<li>Added default focus target user on press F</li>
+</ul>
+<p>Updated</p>
+<ul>
+<li>Updated Create Project UI flow</li>
+<li>Updated Save As project to recent projects list</li>
+<li>Updated skip home page when opening project from XRCC Launcher in PC and XR mode</li>
+<li>Updated Homepage, File Browser, and Asset Panel UI with performance improvements</li>
+<li>Updated Sketchfab login UI flow</li>
+<li>Updated project play mode options</li>
+<li>Updated MCU tutorial link</li>
+<li>Updated thumbnail capture not performed in auto save</li>
+<li>Updated temporary upgrade for outdated premium project</li>
+<li>Updated the default volume of Text to Speech from AI Character</li>
+</ul>
+<p>Fixed</p>
+<ul>
+<li>Fixed an issue where Import Project as Scene missing with remap for MCU, Wit.ai, Poe AI, and related project data</li>
+<li>Fixed an issue where MCU connection and behaviours were unstable in XR mode and after project upgrade</li>
+<li>Fixed an issue where Launcher integration did not receive or update parameters correctly</li>
+<li>Fixed an issue where fade and scene transitions did not work correctly in PC and XR mode</li>
+<li>Fixed an issue where File Browser had search, selection, crash, and thumbnail issues</li>
+<li>Fixed an issue where Asset Panel selection, filter, and display UI were incorrect</li>
+<li>Fixed an issue where asset import validated files by extension only</li>
+<li>Fixed an issue where Wit AI, Poe AI, and AI character features had save and import issues</li>
+<li>Fixed an issue where import scene, save-as, and project data were not saved or updated correctly</li>
+<li>Fixed an issue where XR mode did not return to home after declining project upgrade</li>
+<li>Fixed an issue where keyboard shortcuts and various UI panels did not work as expected</li>
+<li>Fixed an issue where light probe, preview light, and screenshot capture were incorrect</li>
+<li>Fixed an issue where behaviour variable changes not marking project modified</li>
+<li>Fixed an issue where delete motion asset not unblind completely</li>
+<li>Fixed an issue where Get User Property in incorrect behaviour category</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[XRCC 4.0.0.1 Release]]></title>
+            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0.0.1</link>
+            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0.0.1</guid>
+            <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fixed]]></description>
+            <content:encoded><![CDATA[<p>Fixed</p>
+<ul>
+<li>Fixed rename scene not working</li>
+<li>Fixed able to spawn motion asset on asset panel</li>
+<li>Fixed warning displayed on report issue</li>
+<li>Fixed wrong watermark shown on xr mode</li>
+</ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[XRCC 4.0 Release]]></title>
             <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-4.0</link>
@@ -294,85 +549,6 @@
 <ul><li>Added data validation to prevent corrupted data impede load scene</li></ul>
 <p>Fixed</p>
 <ul><li>Fixed an issue where XR Support not working as expected in XR mode</li><li>Fixed an issue where Reporter Panel not display as expected</li><li>Fixed an issue where Start Contact and Stop Contact Behaviour not working as expected in network mode</li><li>Hotfixed an issue where unstable to join session in network mode</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.1.2.2 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.2.2</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.2.2</guid>
-            <pubDate>Tue, 29 Jul 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[New]]></description>
-            <content:encoded><![CDATA[<p>New</p>
-<ul><li>Added Project CreationPanel ProjectName Validation</li><li>Added error message and log to Sketchfab download error</li></ul>
-<p>Fixed</p>
-<ul><li>Fixed an issue where hide in play is not working as expected</li><li>Fixed an issue where character type model assets weren't displaying or animating correctly in preview</li><li>Fixed an issue where some model imports from Sketchfab were failing</li><li>Fixed an issue where localization in the variable panel was incorrect</li><li>Fixed an issue where shortcuts not working as expected in the ReadyPlayerMe Login Panels</li><li>Fixed an issue where some media object colliders cannot initialized as expected</li><li>Fixed an issue where option text couldn't be renamed</li><li>Fixed an issue where ReadyPlayerMe cannot retrieving user model data</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.1.2.1 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.2.1</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.2.1</guid>
-            <pubDate>Mon, 21 Jul 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Updated]]></description>
-            <content:encoded><![CDATA[<p>Updated</p>
-<ul><li>Updated VotanicXR SDK</li><li>Updated clear button to some inputfield</li></ul>
-<p>Fixed</p>
-<ul><li>Fixed an issue where fails to duplicate items with contaminated children data</li><li>Fixed an issue where wrong player name is displayed in network player list panel</li><li>Fixed an issue where Play Animation action always throw warning notification</li><li>Fixed an issue where application freeze when changing variable type</li><li>Fixed an issue where failed to calculate when invalid characters inputted to Inspector</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.1.2 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.2</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.2</guid>
-            <pubDate>Fri, 11 Jul 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[New]]></description>
-            <content:encoded><![CDATA[<p>New</p>
-<ul><li>Added customizable speed for user rotate in XR play &amp; debug mode</li><li>Added behaviour blocks for user movement speed and rotate speed</li><li>Added Microbit Panel in XR mode</li><li>Added Project Level Variable feature with behaviours</li><li>Added shortcut for open screenshot panel for play mode in PC</li><li>Added shortcut for switching Main View Panel and behaviour Panel in PC (Shift+W / Shift+E)</li></ul>
-<p>Updated</p>
-<ul><li>Updated motion preview in XR asset panel</li><li>Updated interaction between user movement to ground object and empty object set to be Wall</li><li>Updated some behaviour blocks default values (i.e. GetPosition, GetRotation, GetScale)</li><li>Updated behaviour blocks name (StopStopwatch, StopTimer) to (PauseStopwatch, PauseTimer)</li><li>Updated anchor points of character from pack</li><li>Updated loading process to speed up loading</li><li>Updated behaviour blocks with new categories</li><li>Updated wording on some confirmation panel</li><li>Updated some of the behaviour categories' colors</li><li>Updated model animation play option with inspector setting and behaviour</li><li>Updated the duration for notification from behaviours with issue</li></ul>
-<p>Fixed</p>
-<ul><li>Fixed an issue where video control button missing hover effect</li><li>Fixed an issue where&nbsp;button object "Click" event not working</li><li>Fixed an issue where&nbsp;camera focusing on small item will not be able to see the item</li><li>Fixed an issue where&nbsp;the previous Action will not be selected when the Select Instance Panel is opened</li><li>Fixed an issue where&nbsp;the input field cannot be submitted by using the Enter key</li><li>Fixed an issue where Start Trigger Behaviour not working after the Show Behaviour true of the item</li><li>Fixed an issue where scene constructed wrongly from play to edit in trial mode</li><li>Fixed an issue where duplicate scene is not working as expected if instance is parented to entity</li><li>Fixed an issue where file browser not working as expected when select all files</li><li>Fixed an issue where item panel unhide all is not working when some item is parented to entity</li><li>Hotfixed an issue where number variable not store value correctly</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.1.1.1 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.1.1</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.1.1</guid>
-            <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Fixed]]></description>
-            <content:encoded><![CDATA[<p>Fixed</p>
-<ul><li>Fixed an issue where wrong upgrade is applied from 3.0 to 3.1 upgrade, note that physics properties of item cannot be restored if the project is already upgraded to 3.1.0</li><li>Fixed an issue where failed to download model from sketchfab</li><li>Fixed an issue where Random Number Behaviour returns wrong values</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.1.1 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.1</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.1</guid>
-            <pubDate>Mon, 09 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Updated]]></description>
-            <content:encoded><![CDATA[<p>Updated</p>
-<ul><li>Updated asset loading and ui to handle corrupted asset from package</li></ul>
-<p>Fixed</p>
-<ul><li>Fixed an issue where wrong update is applied to Play Sound behaviour</li><li>Fixed an issue where ambient lighting from package scene not disabled completely</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.1.0.1 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.0.1</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.0.1</guid>
-            <pubDate>Tue, 03 Jun 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Updated]]></description>
-            <content:encoded><![CDATA[<p>Updated</p>
-<ul><li>Updated localization for some panels</li><li>Updated font types for Dialog Panel and&nbsp;for font settings</li><li>Updated 2D and 3D special objects for clarity</li><li>Updated UX for XR Keyboard</li><li>Updated UX for XR panel</li></ul>
-<p>Fixed</p>
-<ul><li>Fixed an issue where wrong free trial blocker shown on PC play mode&nbsp;</li><li>Fixed an issue where connectivity issue from Microbit&nbsp;</li><li>Fixed an issue where skybox lighting and rendering settings not updating when changing scene assets&nbsp;</li><li>Fixed an issue where editable text not retrieving the original text value when starting editing&nbsp;</li></ul>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[XRCC 3.1.0 Release]]></title>
-            <link>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.0</link>
-            <guid>https://votanic.github.io/XRCC_Tutorial/update/releaseNotes/ReleaseNotes-3.1.0</guid>
-            <pubDate>Tue, 20 May 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[New]]></description>
-            <content:encoded><![CDATA[<p>New</p>
-<ul><li>Improved performance by removed unused resources</li><li>Added support to connect to and interface with Microbit via BLE </li><li>Added wit.ai integration for natural language voice input</li><li>Added new Physics behaviour blocks: Get Velocity</li><li>Added new Math behaviour blocks:</li><ul><li>Rounding &amp; Modulo</li><li>Trigonometric Functions</li><li>Math Constants</li><li>Vector3 Operations</li><li>Power &amp; Log</li></ul><li>Added String operations behaviour blocks </li><li>Added font type selection for Text Object</li><li>Added movement speed to User Component</li><li>Added localisation support for Traditional Chinese and Simplified Chinese languages </li><li>Added support to shape key animation for imported model asset</li><li>Added support to metallic smoothness of material on imported model asset, note that imported model asset may looks different if the model asset was imported on older version</li><li>Added notification for PC debug mode if behaviour has issue, with setting to enable notification</li></ul>
-<p>Updated</p>
-<ul><li>Updated UX on most UI</li><li>Updated Sketchfab download model process with improved error handling and error messages</li><li>Updated notification system for project rename failure </li><li>Updated behaviour variables panel with re-ordering UI component and UX update </li><li>Updated UX for using instance popup panel</li></ul>
-<p>Fixed</p>
-<ul><li>Fixed an issue where wand length can set with negative </li><li>Fixed an issue where XR file browser folder title not updating with path changes </li><li>Fixed an issue where project search could not handle upper case input names</li><li>Fixed an issue where project loading failed when switching to behaviour panel during loading </li><li>Fixed null reference issue in instance panel during loading sequence</li><li>Fixed an issue where user cannot float in air in XR mode when gravity is disabled </li><li>Fixed an issue to prevent animations from playing on models with errors </li><li>Fixed an issue where Math Compare behaviour returning incorrect results with default operator value </li><li>Fixed an issue where the PC quit dialog panel hiding cursor when canceling </li><li>Fixed an issue where save as button not working as expected in XR mode</li><li>Fixed extremely high movement speed in PC mode when user gravity is disabled</li><li>Fixed an issue where Inspector of Text Object cannot show Chinese characters</li><li>Fixed an issue where screenshot captor not able to screenshot Text, Button, Image and Video Object in the scene</li><li>Fixed an issue where Light Object cannot be selected in network edit mode</li></ul>]]></content:encoded>
         </item>
     </channel>
 </rss>
